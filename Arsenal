@@ -1,0 +1,1608 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Loader"))();
+function Mrgunz_Give_Money()
+	local Mrgunz_Code = "BLOXY"
+	local UnnamedCheat_1 = Mrgunz_Code
+	game:GetService("ReplicatedStorage").Redeem:InvokeServer(UnnamedCheat_1)
+end
+if game.PlaceId==286090429 then
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Loader"))();
+	CheatName = "Unnamed Cheat - Arsenal"
+	Mrgunz_Ver = "  "
+	for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+		if v.Name == CheatName then
+			v:Destroy()
+		end
+	end
+	local Mrgunz_False = false
+	local Mrgunz_True = true
+	local UnnamedCheatArsenal = Instance.new("ScreenGui")
+	local MainMenu = Instance.new("Frame")
+	local MainMenuLabel = Instance.new("TextLabel")
+	local Cheats = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	local NoHeadToggleButton = Instance.new("TextButton")
+	local NoHeadToggleLabel = Instance.new("TextLabel")
+	local AirFreezeFrame = Instance.new("Frame")
+	local AirFreezeLabel = Instance.new("TextLabel")
+	local AirFreezeKeyText = Instance.new("TextBox")
+	local AirFreezeBtn = Instance.new("TextButton")
+	local SilentAimHeadButton = Instance.new("TextButton")
+	local SilentAimLabel = Instance.new("TextLabel")
+	local LegitSilentAimHeadButton = Instance.new("TextButton")
+	local LegitSilentAimLabel = Instance.new("TextLabel")
+	local NoclipBulletsButton = Instance.new("TextButton")
+	local NoclipBulletsLabel = Instance.new("TextLabel")
+	local OneHitKillButton = Instance.new("TextButton")
+	local OneHitKillLabel = Instance.new("TextLabel")
+	local EspButton = Instance.new("TextButton")
+	local EspLabel = Instance.new("TextLabel")
+	local TriggerBotButton = Instance.new("TextButton")
+	local TriggerBotLabel = Instance.new("TextLabel")
+	local AntiAimButton = Instance.new("TextButton")
+	local AntiAimLabel = Instance.new("TextLabel")
+	local SpinBotButton = Instance.new("TextButton")
+	local SpinBotLabel = Instance.new("TextLabel")
+	local FlyButton = Instance.new("TextButton")
+	local FlyLabel = Instance.new("TextLabel")
+	local ChatSystemFrame = Instance.new("ScrollingFrame")
+	local ChatSystem = Instance.new("TextLabel")
+	local SpamChatToggleButton = Instance.new("TextButton")
+	local SpamChatToggleLabel = Instance.new("TextLabel")
+	local MessageHere = Instance.new("TextBox")
+	local Player_Hitboxes = Instance.new("ScrollingFrame")
+	local HitboxesLabel = Instance.new("TextLabel")
+	local HeadHitboxText = Instance.new("TextBox")
+	local HeadHitboxLabel = Instance.new("TextLabel")
+	local SetHeadHitboxBtn = Instance.new("TextButton")
+	local SetChesthitboxBtn = Instance.new("TextButton")
+	local ChestHitboxText = Instance.new("TextBox")
+	local ChestHitboxLabel = Instance.new("TextLabel")
+	local TransparencyChestTEXT = Instance.new("TextBox")
+	local TransparencyHeadTEXT = Instance.new("TextBox")
+	local TransparencyHeadLabel = Instance.new("TextLabel")
+	local TransparencyChestLabel = Instance.new("TextLabel")
+	local Hackula_Hitboxes = Instance.new("ScrollingFrame")
+	local HackulaHeadHitboxLabel = Instance.new("TextLabel")
+	local HackulaHeadHitboxText = Instance.new("TextBox")
+	local SetHackulaHeadHitboxBtn = Instance.new("TextButton")
+	local HackulaTransparencyHeadTEXT = Instance.new("TextBox")
+	local HackulaTransparencyHeadLabel = Instance.new("TextLabel")
+	local UI = Instance.new("ScrollingFrame")
+	local SettingsMenu = Instance.new("Frame")
+	local SettingsMenuLabel = Instance.new("TextLabel")
+	local Credits_Frame = Instance.new("Frame")
+	local ijhuygtfikhujymn21njbh4 = Instance.new("TextLabel")
+	local ijhuygtfikhujymn21njbh4_2 = Instance.new("TextLabel")
+	local ijhuygtfikhujymn21njbh4_3 = Instance.new("TextLabel")
+	local ijhuygtfikhujymn21njbh4_4 = Instance.new("TextLabel")
+	local ijhuygtfikhujymn21njbh4_5 = Instance.new("TextLabel")
+	local ijhuygtfikhujymn21njbh4_6 = Instance.new("TextLabel")
+	local ijhuygtfikhujymn21njbh4_7 = Instance.new("TextLabel")
+	local ijhuygtfikhujymn21njbh4_8 = Instance.new("TextLabel")
+	local ijhuygtfikhujymn21njbh4_9 = Instance.new("TextLabel")
+	local TEXT = Instance.new("TextLabel")
+	local DeleteMenu = Instance.new("TextButton")
+	local HideShow = Instance.new("TextLabel")
+	local SettingToggles = Instance.new("Frame")
+	local UIListLayout_2 = Instance.new("UIListLayout")
+	local UICornerToggleButton = Instance.new("TextButton")
+	local UICornerToggleLabel = Instance.new("TextLabel")
+	local WatermarkToggleButton = Instance.new("TextButton")
+	local WatermarkToggleLabel = Instance.new("TextLabel")
+	local AdvertiseToggleButton = Instance.new("TextButton")
+	local AdvertiseToggleLabel = Instance.new("TextLabel")
+	local Tools = Instance.new("Folder")
+	local Mrgunz_UICorner = Instance.new("UICorner")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/List"))();
+	function Unnamed_CheatHider()
+		local length = math.random(20,50)
+		local array = {}
+		for i = 1, length do
+			array[i] = string.char(math.random(21, 50))
+		end
+		return table.concat(array)
+	end
+	UnnamedCheatArsenal.Name = CheatName
+	UnnamedCheatArsenal.Parent = game.CoreGui
+	UnnamedCheatArsenal.Enabled = true
+	game:GetService("UserInputService").InputBegan:connect(function(input, gameProcessed)
+		if input.KeyCode == Enum.KeyCode.F2 then
+			if not gameProcessed then
+				UnnamedCheatArsenal.Enabled = not UnnamedCheatArsenal.Enabled
+			end
+		end
+	end)
+	game:GetService("UserInputService").InputBegan:connect(function(input, gameProcessed)
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			if not gameProcessed then
+				UnnamedCheatArsenal.Enabled = not UnnamedCheatArsenal.Enabled
+			end
+		end
+	end)
+	
+	FLYING = false
+	flyspeed = 1
+	function Fly(vfly)
+		repeat wait() until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild('HumanoidRootPart') and game.Players.LocalPlayer.Character:FindFirstChild('Humanoid')
+		repeat wait() until game.Players.LocalPlayer:GetMouse()
+		local T = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local CONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
+		local lCONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
+		local SPEED = 0
+		local function FLY()
+			FLYING = true
+			local BG = Instance.new('BodyGyro', T)
+			local BV = Instance.new('BodyVelocity', T)
+			BG.P = 9e4
+			BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+			BG.cframe = T.CFrame
+			BV.velocity = Vector3.new(0, 0, 0)
+			BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+			spawn(function()
+				repeat wait()
+					if not vfly then
+						game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').PlatformStand = true
+					end
+					if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 or CONTROL.Q + CONTROL.E ~= 0 then
+						SPEED = 50
+					elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 or CONTROL.Q + CONTROL.E ~= 0) and SPEED ~= 0 then
+						SPEED = 0
+					end
+					if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 or (CONTROL.Q + CONTROL.E) ~= 0 then
+						BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B + CONTROL.Q + CONTROL.E) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+						lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+					elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and (CONTROL.Q + CONTROL.E) == 0 and SPEED ~= 0 then
+						BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B + CONTROL.Q + CONTROL.E) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+					else
+						BV.velocity = Vector3.new(0, 0, 0)
+					end
+					BG.cframe = workspace.CurrentCamera.CoordinateFrame
+				until not FLYING
+				CONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
+				lCONTROL = {F = 0, B = 0, L = 0, R = 0, Q = 0, E = 0}
+				SPEED = 0
+				BG:destroy()
+				BV:destroy()
+				game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').PlatformStand = false
+			end)
+		end
+		game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				if not vfly then
+					CONTROL.F = flyspeed
+				end
+			elseif KEY:lower() == 's' then
+				if not vfly then
+					CONTROL.B = - flyspeed
+				end
+			elseif KEY:lower() == 'a' then
+				if not vfly then
+					CONTROL.L = - flyspeed
+				end
+			elseif KEY:lower() == 'd' then 
+				if not vfly then
+					CONTROL.R = flyspeed
+				end
+			elseif KEY:lower() == 'e' then
+				if not vfly then
+					CONTROL.Q = flyspeed*2
+				end
+			elseif KEY:lower() == 'q' then
+				if not vfly then
+					CONTROL.E = -flyspeed*2
+				end
+			end
+		end)
+		game.Players.LocalPlayer:GetMouse().KeyUp:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 0
+			elseif KEY:lower() == 's' then
+				CONTROL.B = 0
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = 0
+			elseif KEY:lower() == 'd' then
+				CONTROL.R = 0
+			elseif KEY:lower() == 'e' then
+				CONTROL.Q = 0
+			elseif KEY:lower() == 'q' then
+				CONTROL.E = 0
+			end
+		end)
+		FLY()
+	end
+	
+	MainMenu.Name =  "Made By Mrgunz#2289"
+	MainMenu.Parent = UnnamedCheatArsenal
+	MainMenu.Active = true
+	MainMenu.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	MainMenu.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	MainMenu.Position = UDim2.new(0.021484375, 0, 0.0312950164, 0)
+	MainMenu.Size = UDim2.new(0, 215, 0, 669)
+
+	MainMenuLabel.Name =tostring(math.random())
+	MainMenuLabel.Parent = MainMenu
+	MainMenuLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MainMenuLabel.BackgroundTransparency = 1.000
+	MainMenuLabel.BorderSizePixel = 0
+	MainMenuLabel.Size = UDim2.new(0, 214, 0, 23)
+	MainMenuLabel.ZIndex = 2
+	MainMenuLabel.Font = Enum.Font.SciFi
+	MainMenuLabel.Text = "  Unnamed Cheat"
+	MainMenuLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	MainMenuLabel.TextSize = 14.000
+	MainMenuLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	Cheats.Name =  Unnamed_CheatHider() --tostring(math.random())
+	Cheats.Parent = MainMenu
+	Cheats.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	Cheats.BorderSizePixel = 0
+	Cheats.Position = UDim2.new(0.0325581394, 0, 0.0463378169, 0)
+	Cheats.Size = UDim2.new(0, 200, 0, 292)
+
+
+	UIListLayout.Name =  Unnamed_CheatHider() --Unnamed_CheatHider()
+	UIListLayout.Parent = Cheats
+	UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	
+	local UnnamedCheat_NoHead = false
+	
+	NoHeadToggleButton.Name =tostring(math.random())
+	NoHeadToggleButton.Parent = Cheats
+	NoHeadToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	NoHeadToggleButton.BackgroundTransparency = 1.000
+	NoHeadToggleButton.BorderSizePixel = 0
+	NoHeadToggleButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	NoHeadToggleButton.Size = UDim2.new(0, 192, 0, 19)
+	NoHeadToggleButton.ZIndex = 3
+	NoHeadToggleButton.Font = Enum.Font.SourceSans
+	NoHeadToggleButton.Text = "Off  "
+	NoHeadToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	NoHeadToggleButton.TextSize = 14.000
+	NoHeadToggleButton.TextXAlignment = Enum.TextXAlignment.Right
+	NoHeadToggleButton.MouseButton1Down:connect(function()
+		local button = NoHeadToggleButton
+		local on = false
+		button.MouseButton1Click:Connect(function()
+			on = not on
+			if on then
+				button.Text = "On  "
+				button.TextColor3 = Color3.fromRGB(85, 255, 0)
+				UnnamedCheat_NoHead = true
+				repeat wait()
+					for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+						if v.Name == "FakeHead" and "HeadHB" then
+							v:Destroy()
+						end
+					end
+				until UnnamedCheat_NoHead == false
+			end
+			if on == false then
+				button.Text = "Off  "
+				button.TextColor3 = Color3.fromRGB(255, 255, 255)
+				UnnamedCheat_NoHead = false
+			end
+		end)
+	end)
+
+	NoHeadToggleLabel.Name = tostring(math.random())
+	NoHeadToggleLabel.Parent = NoHeadToggleButton
+	NoHeadToggleLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	NoHeadToggleLabel.BorderSizePixel = 0
+	NoHeadToggleLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	NoHeadToggleLabel.Size = UDim2.new(0, 200, 0, 19)
+	NoHeadToggleLabel.ZIndex = 2
+	NoHeadToggleLabel.Font = Enum.Font.SciFi
+	NoHeadToggleLabel.Text = "  No Head"
+	NoHeadToggleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	NoHeadToggleLabel.TextSize = 14.000
+	NoHeadToggleLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	AirFreezeFrame.Name = tostring(math.random())
+	AirFreezeFrame.Parent = Cheats
+	AirFreezeFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	AirFreezeFrame.BorderSizePixel = 0
+	AirFreezeFrame.Position = UDim2.new(0.0325581394, 0, 0.834080696, 0)
+	AirFreezeFrame.Size = UDim2.new(0, 200, 0, 62)
+	AirFreezeFrame.ZIndex = 2
+
+	AirFreezeLabel.Name = tostring(math.random())
+	AirFreezeLabel.Parent = AirFreezeFrame
+	AirFreezeLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	AirFreezeLabel.BackgroundTransparency = 1.000
+	AirFreezeLabel.BorderSizePixel = 0
+	AirFreezeLabel.Position = UDim2.new(-0.0350000001, 0, 0, 0)
+	AirFreezeLabel.Size = UDim2.new(0, 214, 0, 14)
+	AirFreezeLabel.ZIndex = 3
+	AirFreezeLabel.Font = Enum.Font.SciFi
+	AirFreezeLabel.Text = "Air Freeze"
+	AirFreezeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AirFreezeLabel.TextSize = 14.000
+
+	AirFreezeKeyText.Name =  Unnamed_CheatHider() --Unnamed_CheatHider()
+	AirFreezeKeyText.Parent = AirFreezeFrame
+	AirFreezeKeyText.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	AirFreezeKeyText.BorderSizePixel = 0
+	AirFreezeKeyText.Position = UDim2.new(0.492209256, 0, 0.453373075, 0)
+	AirFreezeKeyText.Size = UDim2.new(0, 73, 0, 17)
+	AirFreezeKeyText.ZIndex = 3
+	AirFreezeKeyText.Font = Enum.Font.SourceSans
+	AirFreezeKeyText.PlaceholderText = "F"
+	AirFreezeKeyText.Text = "F"
+	AirFreezeKeyText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AirFreezeKeyText.TextScaled = true
+	AirFreezeKeyText.TextSize = 14.000
+	AirFreezeKeyText.TextWrapped = true
+
+	AirFreezeBtn.Name =  Unnamed_CheatHider() --Unnamed_CheatHider()
+	AirFreezeBtn.Parent = AirFreezeFrame
+	AirFreezeBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	AirFreezeBtn.BorderSizePixel = 0
+	AirFreezeBtn.Position = UDim2.new(0.14325577, 0, 0.453373075, 0)
+	AirFreezeBtn.Size = UDim2.new(0, 69, 0, 21)
+	AirFreezeBtn.ZIndex = 3
+	AirFreezeBtn.Font = Enum.Font.SourceSans
+	AirFreezeBtn.Text = "Set Key"
+	AirFreezeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AirFreezeBtn.TextSize = 14.000
+	AirFreezeBtn.MouseButton1Down:connect(function()
+		local Player = game:GetService("Players").LocalPlayer
+		local Players = game:GetService("Players")
+		local uis = game:GetService("UserInputService")
+		_G.AirThingKey = AirFreezeKeyText.Text
+		uis.InputBegan:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode[_G.AirThingKey] then
+				Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+			end
+		end)
+		uis.InputEnded:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode[_G.AirThingKey] then
+				Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+			end
+		end)
+	end)
+
+	SilentAimHeadButton.Name =Unnamed_CheatHider()
+	SilentAimHeadButton.Parent = Cheats
+	SilentAimHeadButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SilentAimHeadButton.BackgroundTransparency = 1.000
+	SilentAimHeadButton.BorderSizePixel = 0
+	SilentAimHeadButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	SilentAimHeadButton.Size = UDim2.new(0, 192, 0, 19)
+	SilentAimHeadButton.ZIndex = 3
+	SilentAimHeadButton.Font = Enum.Font.SourceSans
+	SilentAimHeadButton.Text = "Off  "
+	SilentAimHeadButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SilentAimHeadButton.TextSize = 14.000
+	SilentAimHeadButton.TextXAlignment = Enum.TextXAlignment.Right
+	SilentAimHeadButton.MouseButton1Down:connect(function()
+		SilentAimHeadButton.Text = "On  "
+		SilentAimHeadButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+		local _CC_ = workspace.CurrentCamera local Players = game.GetService(game, "Players")local LocalPlayer = Players.LocalPlayer local A_Mouse = LocalPlayer:GetMouse()function ClosestPlayer()local MaxDist, Closest = math.huge for I,V in pairs(Players.GetPlayers(Players)) do if V == LocalPlayer then continue end if V.Team == LocalPlayer then continue end if not V.Character then continue end local Head = V.Character.FindFirstChild(V.Character, "Head")if not Head then continue end local Pos, Vis = _CC_.WorldToScreenPoint(_CC_, Head.Position)if not Vis then continue end local MousePos, TheirPos = Vector2.new(A_Mouse.X, A_Mouse.Y), Vector2.new(Pos.X, Pos.Y)local Dist = (TheirPos - MousePos).Magnitude if Dist < MaxDist then MaxDist = Dist Closest = V end end return Closest end local MT = getrawmetatable(game)local OldNC = MT.__namecall local OldIDX = MT.__index setreadonly(MT, Mrgunz_False)MT.__namecall = newcclosure(function(self, ...)local Args, Method = {...}, getnamecallmethod()if Method == "FindPartOnRayWithIgnoreList" and not checkcaller() then local CP = ClosestPlayer()if CP and CP.Character and CP.Character.FindFirstChild(CP.Character, "Head") then Args[1] = Ray.new(_CC_.CFrame.Position, (CP.Character.Head.Position - _CC_.CFrame.Position).Unit * 1000)return OldNC(self, unpack(Args)) end end return OldNC(self, ...)end)
+	end)
+
+	SilentAimLabel.Name =  Unnamed_CheatHider() --Unnamed_CheatHider()
+	SilentAimLabel.Parent = SilentAimHeadButton
+	SilentAimLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SilentAimLabel.BorderSizePixel = 0
+	SilentAimLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	SilentAimLabel.Size = UDim2.new(0, 200, 0, 19)
+	SilentAimLabel.ZIndex = 2
+	SilentAimLabel.Font = Enum.Font.SciFi
+	SilentAimLabel.Text = "  Silent Aim"
+	SilentAimLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SilentAimLabel.TextSize = 14.000
+	SilentAimLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	LegitSilentAimHeadButton.Name =  Unnamed_CheatHider() --"Legit Silent Aim Head Button"
+	LegitSilentAimHeadButton.Parent = Cheats
+	LegitSilentAimHeadButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	LegitSilentAimHeadButton.BackgroundTransparency = 1.000
+	LegitSilentAimHeadButton.BorderSizePixel = 0
+	LegitSilentAimHeadButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	LegitSilentAimHeadButton.Size = UDim2.new(0, 192, 0, 19)
+	LegitSilentAimHeadButton.ZIndex = 3
+	LegitSilentAimHeadButton.Font = Enum.Font.SourceSans
+	LegitSilentAimHeadButton.Text = "Off  "
+	LegitSilentAimHeadButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	LegitSilentAimHeadButton.TextSize = 14.000
+	LegitSilentAimHeadButton.TextXAlignment = Enum.TextXAlignment.Right
+	LegitSilentAimHeadButton.MouseButton1Down:connect(function()
+		LegitSilentAimHeadButton.Text = "On  "
+		LegitSilentAimHeadButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+		local _CC_ = workspace.CurrentCamera local Players = game.GetService(game, "Players")local LocalPlayer = Players.LocalPlayer local A_Mouse = LocalPlayer:GetMouse()function ClosestPlayer()local MaxDist, Closest = math.huge for I,V in pairs(Players.GetPlayers(Players)) do if V == LocalPlayer then continue end if V.Team == LocalPlayer then continue end if not V.Character then continue end local HumanoidRootPart = V.Character.FindFirstChild(V.Character, "HumanoidRootPart")if not HumanoidRootPart then continue end local Pos, Vis = _CC_.WorldToScreenPoint(_CC_, HumanoidRootPart.Position)if not Vis then continue end local MousePos, TheirPos = Vector2.new(A_Mouse.X, A_Mouse.Y), Vector2.new(Pos.X, Pos.Y)local Dist = (TheirPos - MousePos).Magnitude if Dist < MaxDist then MaxDist = Dist Closest = V end end return Closest end local MT = getrawmetatable(game)local OldNC = MT.__namecall local OldIDX = MT.__index setreadonly(MT, Mrgunz_False)MT.__namecall = newcclosure(function(self, ...)local Args, Method = {...}, getnamecallmethod()if Method == "FindPartOnRayWithIgnoreList" and not checkcaller() then local CP = ClosestPlayer()if CP and CP.Character and CP.Character.FindFirstChild(CP.Character, "HumanoidRootPart") then Args[1] = Ray.new(_CC_.CFrame.Position, (CP.Character.HumanoidRootPart.Position - _CC_.CFrame.Position).Unit * 1000)return OldNC(self, unpack(Args)) end end return OldNC(self, ...)end)
+	end)
+
+	LegitSilentAimLabel.Name =  Unnamed_CheatHider() --"Legit Silent Aim Label"
+	LegitSilentAimLabel.Parent = LegitSilentAimHeadButton
+	LegitSilentAimLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	LegitSilentAimLabel.BorderSizePixel = 0
+	LegitSilentAimLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	LegitSilentAimLabel.Size = UDim2.new(0, 200, 0, 19)
+	LegitSilentAimLabel.ZIndex = 2
+	LegitSilentAimLabel.Font = Enum.Font.SciFi
+	LegitSilentAimLabel.Text = "  Legit Silent Aim"
+	LegitSilentAimLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	LegitSilentAimLabel.TextSize = 14.000
+	LegitSilentAimLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	NoclipBulletsButton.Name =  Unnamed_CheatHider() --"Noclip Bullets Button"
+	NoclipBulletsButton.Parent = Cheats
+	NoclipBulletsButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	NoclipBulletsButton.BackgroundTransparency = 1.000
+	NoclipBulletsButton.BorderSizePixel = 0
+	NoclipBulletsButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	NoclipBulletsButton.Size = UDim2.new(0, 192, 0, 19)
+	NoclipBulletsButton.ZIndex = 3
+	NoclipBulletsButton.Font = Enum.Font.SourceSans
+	NoclipBulletsButton.Text = "Off  "
+	NoclipBulletsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	NoclipBulletsButton.TextSize = 14.000
+	NoclipBulletsButton.TextXAlignment = Enum.TextXAlignment.Right
+	NoclipBulletsButton.MouseButton1Down:connect(function()
+		NoclipBulletsButton.Text = "On  "
+		NoclipBulletsButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+		for i,v in next, game.ReplicatedStorage.Weapons:GetChildren() do
+			for i,c in next, v:GetChildren() do 
+				for i,x in next, getconnections(c.Changed) do
+					x:Disable() 
+				end
+				if c.Name == "Ammo" or c.Name == "StoredAmmo" then
+					c.Value = 283 elseif c.Name == "AReload" or c.Name == "RecoilControl" or c.Name == "EReload" or c.Name == "SReload" or c.Name == "ReloadTime" or c.Name == "EquipTime" or c.Name == "Spread" or c.Name == "MaxSpread" then c.Value = 0
+				elseif c.Name == "Range" then
+					c.Value = 9e9 elseif c.Name == "Auto" then
+					c.Value = true elseif c.Name == "FireRate" or c.Name == "BFireRate" then
+					c.Value = 0.02 
+				end
+			end
+		end
+	end)
+
+	NoclipBulletsLabel.Name =  Unnamed_CheatHider() --"Noclip Bullets Label"
+	NoclipBulletsLabel.Parent = NoclipBulletsButton
+	NoclipBulletsLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	NoclipBulletsLabel.BorderSizePixel = 0
+	NoclipBulletsLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	NoclipBulletsLabel.Size = UDim2.new(0, 200, 0, 19)
+	NoclipBulletsLabel.ZIndex = 2
+	NoclipBulletsLabel.Font = Enum.Font.SciFi
+	NoclipBulletsLabel.Text = "  Mod Guns  "
+	NoclipBulletsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	NoclipBulletsLabel.TextSize = 14.000
+	NoclipBulletsLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	OneHitKillButton.Name =  Unnamed_CheatHider() --"One Hit Kill Button"
+	OneHitKillButton.Parent = Cheats
+	OneHitKillButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	OneHitKillButton.BackgroundTransparency = 1.000
+	OneHitKillButton.BorderSizePixel = 0
+	OneHitKillButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	OneHitKillButton.Size = UDim2.new(0, 192, 0, 19)
+	OneHitKillButton.ZIndex = 3
+	OneHitKillButton.Font = Enum.Font.SourceSans
+	OneHitKillButton.Text = "Off  "
+	OneHitKillButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	OneHitKillButton.TextSize = 14.000
+	OneHitKillButton.TextXAlignment = Enum.TextXAlignment.Right
+	OneHitKillButton.MouseButton1Down:connect(function()
+		local met = getrawmetatable(game)
+		setreadonly(met,false)
+		local old = met.__namecall
+		met.__namecall = function(t,...)
+			local args = {...}
+			if(getnamecallmethod()=="FireServer") then
+				if(tostring(t) == "HitPart") then
+					for i = 0,25 do old(t,...)end
+				end
+			end
+			return old(t,...)
+		end
+		OneHitKillButton.Text = "On  "
+		OneHitKillButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+	end)
+
+	OneHitKillLabel.Name =  Unnamed_CheatHider() --"One Hit Kill Label"
+	OneHitKillLabel.Parent = OneHitKillButton
+	OneHitKillLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	OneHitKillLabel.BorderSizePixel = 0
+	OneHitKillLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	OneHitKillLabel.Size = UDim2.new(0, 200, 0, 19)
+	OneHitKillLabel.ZIndex = 2
+	OneHitKillLabel.Font = Enum.Font.SciFi
+	OneHitKillLabel.Text = "  One Hit Kill"
+	OneHitKillLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	OneHitKillLabel.TextSize = 14.000
+	OneHitKillLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	EspButton.Name =  Unnamed_CheatHider() --"Esp Button"
+	EspButton.Parent = Cheats
+	EspButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	EspButton.BackgroundTransparency = 1.000
+	EspButton.BorderSizePixel = 0
+	EspButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	EspButton.Size = UDim2.new(0, 192, 0, 19)
+	EspButton.ZIndex = 3
+	EspButton.Font = Enum.Font.SourceSans
+	EspButton.Text = "Off  "
+	EspButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	EspButton.TextSize = 14.000
+	EspButton.TextXAlignment = Enum.TextXAlignment.Right
+	EspButton.MouseButton1Down:connect(function()
+		EspButton.Text = "On  "
+		EspButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+		game:GetService("RunService"):BindToRenderStep("UnnamedCheat_Box", 0, function()
+			for i, v in pairs(game:GetService("Workspace"):GetChildren()) do
+				for i, z in pairs(v:GetChildren()) do
+					if z.Name == "HumanoidRootPart" then
+						if z:FindFirstChild("box_esp") == nil then
+							local box_esp = Instance.new("BillboardGui")
+							local fa = Instance.new("Frame")
+							local eq = Instance.new("Frame")
+							local q = Instance.new("Frame")
+							local qd = Instance.new("Frame")
+							local qd_2 = Instance.new("Frame")
+							box_esp.Name = "box_esp"
+							box_esp.Parent = z
+							box_esp.AlwaysOnTop = true
+							box_esp.Size = UDim2.new(4, 0, 5.4000001, 0)
+							fa.Name = tostring(math.random())
+							fa.Parent = box_esp
+							fa.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+							fa.BackgroundTransparency = 1.000
+							fa.BorderSizePixel = 0
+							fa.Size = UDim2.new(1, 0, 1, 0)
+							eq.Name = tostring(math.random())
+							eq.Parent = fa
+							eq.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+							eq.BorderSizePixel = 0
+							eq.Size = UDim2.new(0, 1, 1, 0)
+							q.Name = tostring(math.random())
+							q.Parent = fa
+							q.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+							q.BorderSizePixel = 0
+							q.Position = UDim2.new(1, 0, 0, 0)
+							q.Size = UDim2.new(0, -1, 1, 0)
+							qd.Name = tostring(math.random())
+							qd.Parent = fa
+							qd.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+							qd.BorderSizePixel = 0
+							qd.Size = UDim2.new(1, 0, 0, 1)
+							qd_2.Name = tostring(math.random())
+							qd_2.Parent = fa
+							qd_2.BackgroundColor3 = Color3.fromRGB(242, 243, 243)
+							qd_2.BorderSizePixel = 0
+							qd_2.Position = UDim2.new(0, 0, 1, 0)
+							qd_2.Size = UDim2.new(1, 0, 0, -1)
+						end
+					end
+				end
+			end
+		end)
+	end)
+
+	EspLabel.Name =  Unnamed_CheatHider() --"EspLabel"
+	EspLabel.Parent = EspButton
+	EspLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	EspLabel.BorderSizePixel = 0
+	EspLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	EspLabel.Size = UDim2.new(0, 200, 0, 19)
+	EspLabel.ZIndex = 2
+	EspLabel.Font = Enum.Font.SciFi
+	EspLabel.Text = "  Box Esp"
+	EspLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	EspLabel.TextSize = 14.000
+	EspLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	TriggerBotButton.Name =  Unnamed_CheatHider() --"Trigger Bot Button"
+	TriggerBotButton.Parent = Cheats
+	TriggerBotButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	TriggerBotButton.BackgroundTransparency = 1.000
+	TriggerBotButton.BorderSizePixel = 0
+	TriggerBotButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	TriggerBotButton.Size = UDim2.new(0, 192, 0, 19)
+	TriggerBotButton.ZIndex = 3
+	TriggerBotButton.Font = Enum.Font.SourceSans
+	TriggerBotButton.Text = "Off  "
+	TriggerBotButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TriggerBotButton.TextSize = 14.000
+	TriggerBotButton.TextXAlignment = Enum.TextXAlignment.Right
+	TriggerBotButton.MouseButton1Down:connect(function()
+		local button = TriggerBotButton
+		local on = false
+		local player = game:GetService("Players").LocalPlayer
+		local mouse = player:GetMouse()
+		button.MouseButton1Click:Connect(function()
+			on = not on
+			if on then
+				button.Text = "On  "
+				button.TextColor3 = Color3.fromRGB(85, 255, 0)
+				game:GetService("RunService"):BindToRenderStep("UnnamedCheat_Hit", 0, function()
+					if mouse.Target.Parent:FindFirstChildOfClass("Humanoid") then
+						local target = game:GetService("Players")[mouse.Target.Parent.Name]
+						if target ~= player and target.TeamColor ~= player.TeamColor then
+							mouse1press()
+							wait()
+							mouse1release()
+						end
+					end
+				end)
+			end
+			if on == false then
+			end
+		end)
+	end)
+
+	TriggerBotLabel.Name =  Unnamed_CheatHider() --"Trigger Bot Label"
+	TriggerBotLabel.Parent = TriggerBotButton
+	TriggerBotLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	TriggerBotLabel.BorderSizePixel = 0
+	TriggerBotLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	TriggerBotLabel.Size = UDim2.new(0, 200, 0, 19)
+	TriggerBotLabel.ZIndex = 2
+	TriggerBotLabel.Font = Enum.Font.SciFi
+	TriggerBotLabel.Text = "  Trigger Bot"
+	TriggerBotLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TriggerBotLabel.TextSize = 14.000
+	TriggerBotLabel.TextXAlignment = Enum.TextXAlignment.Left
+	
+	local UnnamedCheat_AntiAim = false
+	
+	AntiAimButton.Name =  Unnamed_CheatHider() --"Anti Aim Button"
+	AntiAimButton.Parent = Cheats
+	AntiAimButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	AntiAimButton.BackgroundTransparency = 1.000
+	AntiAimButton.BorderSizePixel = 0
+	AntiAimButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	AntiAimButton.Size = UDim2.new(0, 192, 0, 19)
+	AntiAimButton.ZIndex = 3
+	AntiAimButton.Font = Enum.Font.SourceSans
+	AntiAimButton.Text = "Off  "
+	AntiAimButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AntiAimButton.TextSize = 14.000
+	AntiAimButton.TextXAlignment = Enum.TextXAlignment.Right
+	AntiAimButton.MouseButton1Down:connect(function()
+		local button = AntiAimButton
+		local on = false
+		button.MouseButton1Click:Connect(function()
+			on = not on
+			if on then
+				button.Text = "On  "
+				button.TextColor3 = Color3.fromRGB(85, 255, 0)
+				UnnamedCheat_AntiAim = true
+				repeat wait(0.000001)
+					Game:GetService("ReplicatedStorage").Events.ControlTurn:FireServer(math.random(-1000,1000))
+				until UnnamedCheat_AntiAim == false
+			end
+			if on == false then
+				button.Text = "Off  "
+				button.TextColor3 = Color3.fromRGB(255, 255, 255)
+				UnnamedCheat_AntiAim = false
+			end
+		end)
+	end)
+
+	AntiAimLabel.Name =  Unnamed_CheatHider() --"Anti Aim Label"
+	AntiAimLabel.Parent = AntiAimButton
+	AntiAimLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	AntiAimLabel.BorderSizePixel = 0
+	AntiAimLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	AntiAimLabel.Size = UDim2.new(0, 200, 0, 19)
+	AntiAimLabel.ZIndex = 2
+	AntiAimLabel.Font = Enum.Font.SciFi
+	AntiAimLabel.Text = "  Anti Aim "
+	AntiAimLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AntiAimLabel.TextSize = 14.000
+	AntiAimLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	SpinBotButton.Name =  Unnamed_CheatHider() --"Spin Bot Button"
+	SpinBotButton.Parent = Cheats
+	SpinBotButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SpinBotButton.BackgroundTransparency = 1.000
+	SpinBotButton.BorderSizePixel = 0
+	SpinBotButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	SpinBotButton.Size = UDim2.new(0, 192, 0, 19)
+	SpinBotButton.ZIndex = 3
+	SpinBotButton.Font = Enum.Font.SourceSans
+	SpinBotButton.Text = "Off  "
+	SpinBotButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SpinBotButton.TextSize = 14.000
+	SpinBotButton.TextXAlignment = Enum.TextXAlignment.Right
+	SpinBotButton.MouseButton1Down:connect(function()
+		local button = SpinBotButton
+		local on = false
+		local Mrgunz_LP = game:GetService("Players").LocalPlayer
+		button.MouseButton1Click:Connect(function()
+			on = not on
+			if on then
+				button.Text = "On  "
+				button.TextColor3 = Color3.fromRGB(85, 255, 0)
+				function Mrgunz_UpperTorso(char)
+					local rootPart = char:FindFirstChild('UpperTorso')
+					return rootPart
+				end
+				local Spin = Instance.new("BodyAngularVelocity")
+				Spin.Name = "Spinning"
+				Spin.Parent = Mrgunz_UpperTorso(game:GetService("Players").LocalPlayer.Character)
+				Spin.MaxTorque = Vector3.new(0, math.huge, 0)
+				Spin.AngularVelocity = Vector3.new(0,30,0)
+			end
+			if on == false then
+				button.Text = "Off  "
+				button.TextColor3 = Color3.fromRGB(255, 255, 255)
+				for i,v in pairs(Mrgunz_UpperTorso(Mrgunz_LP.Character):GetChildren()) do
+					if v.Name == "Spinning" then v:Destroy()end end
+			end
+		end)
+	end)
+
+	SpinBotLabel.Name =  Unnamed_CheatHider() --"Spin Bot Label"
+	SpinBotLabel.Parent = SpinBotButton
+	SpinBotLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SpinBotLabel.BorderSizePixel = 0
+	SpinBotLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	SpinBotLabel.Size = UDim2.new(0, 200, 0, 19)
+	SpinBotLabel.ZIndex = 2
+	SpinBotLabel.Font = Enum.Font.SciFi
+	SpinBotLabel.Text = "  Spin Bot"
+	SpinBotLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SpinBotLabel.TextSize = 14.000
+	SpinBotLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	FlyButton.Name =  Unnamed_CheatHider() --"Fly Button"
+	FlyButton.Parent = Cheats
+	FlyButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	FlyButton.BackgroundTransparency = 1.000
+	FlyButton.BorderSizePixel = 0
+	FlyButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	FlyButton.Size = UDim2.new(0, 192, 0, 19)
+	FlyButton.ZIndex = 3
+	FlyButton.Font = Enum.Font.SourceSans
+	FlyButton.Text = "Off  "
+	FlyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	FlyButton.TextSize = 14.000
+	FlyButton.TextXAlignment = Enum.TextXAlignment.Right
+	FlyButton.MouseButton1Down:connect(function()
+		local button = FlyButton
+		local on = false
+		button.MouseButton1Click:Connect(function()
+			on = not on
+			if on then
+				button.Text = "On  "
+				button.TextColor3 = Color3.fromRGB(85, 255, 0)
+				Fly(vfly)
+			end
+			if on == false then
+				FLYING = false
+			end
+		end)
+	end)
+
+	FlyLabel.Name =  Unnamed_CheatHider() --"Fly Label"
+	FlyLabel.Parent = FlyButton
+	FlyLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	FlyLabel.BorderSizePixel = 0
+	FlyLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	FlyLabel.Size = UDim2.new(0, 200, 0, 19)
+	FlyLabel.ZIndex = 2
+	FlyLabel.Font = Enum.Font.SciFi
+	FlyLabel.Text = "  Fly"
+	FlyLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	FlyLabel.TextSize = 14.000
+	FlyLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	ChatSystemFrame.Name =  Unnamed_CheatHider() --"Chat System Frame"
+	ChatSystemFrame.Parent = MainMenu
+	ChatSystemFrame.Active = true
+	ChatSystemFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	ChatSystemFrame.BorderSizePixel = 0
+	ChatSystemFrame.Position = UDim2.new(0.0325581357, 0, 0.48281014, 0)
+	ChatSystemFrame.Size = UDim2.new(0, 200, 0, 100)
+	ChatSystemFrame.ZIndex = 2
+	ChatSystemFrame.BottomImage = "rbxassetid://0"
+	ChatSystemFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+	ChatSystemFrame.MidImage = "rbxassetid://0"
+	ChatSystemFrame.ScrollBarThickness = 0
+	ChatSystemFrame.TopImage = "rbxassetid://0"
+
+	ChatSystem.Name =  Unnamed_CheatHider() --"ChatSystem"
+	ChatSystem.Parent = ChatSystemFrame
+	ChatSystem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ChatSystem.BackgroundTransparency = 1.000
+	ChatSystem.BorderSizePixel = 0
+	ChatSystem.Position = UDim2.new(0, 0, -0.0054409788, 0)
+	ChatSystem.Size = UDim2.new(0, 199, 0, 16)
+	ChatSystem.ZIndex = 3
+	ChatSystem.Font = Enum.Font.SciFi
+	ChatSystem.Text = "Chat System"
+	ChatSystem.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ChatSystem.TextScaled = true
+	ChatSystem.TextSize = 14.000
+	ChatSystem.TextWrapped = true
+	
+	local UnnamedCheat_SpamChat = false
+	
+	SpamChatToggleButton.Name =  Unnamed_CheatHider() --"Spam Chat Toggle Button"
+	SpamChatToggleButton.Parent = ChatSystemFrame
+	SpamChatToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SpamChatToggleButton.BackgroundTransparency = 1.000
+	SpamChatToggleButton.BorderSizePixel = 0
+	SpamChatToggleButton.Position = UDim2.new(0, 0, 0.400523067, 0)
+	SpamChatToggleButton.Size = UDim2.new(0, 195, 0, 19)
+	SpamChatToggleButton.ZIndex = 3
+	SpamChatToggleButton.Font = Enum.Font.SourceSans
+	SpamChatToggleButton.Text = "Off  "
+	SpamChatToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SpamChatToggleButton.TextSize = 14.000
+	SpamChatToggleButton.TextXAlignment = Enum.TextXAlignment.Right
+	SpamChatToggleButton.MouseButton1Down:connect(function()
+		local button = SpamChatToggleButton
+		local on = false
+		button.MouseButton1Click:Connect(function()
+			on = not on
+			if on then
+				button.Text = "On  "
+				button.TextColor3 = Color3.fromRGB(85, 255, 0)
+				UnnamedCheat_SpamChat = true
+				repeat wait(.1)
+					local UnnamedCheat_1 = 	MessageHere.Text
+					local UnnamedCheat_2 = false
+					local UnnamedCheat_3 = true
+					local UnnamedCheat_4 = true
+					game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(UnnamedCheat_1,UnnamedCheat_2,UnnamedCheat_3,UnnamedCheat_4)
+				until UnnamedCheat_SpamChat == false
+			end
+			if on == false then
+				button.Text = "Off  "
+				button.TextColor3 = Color3.fromRGB(255, 255, 255)
+				UnnamedCheat_SpamChat = false
+			end
+		end)
+	end)
+
+	SpamChatToggleLabel.Name =  Unnamed_CheatHider() --"Spam Chat Toggle Label"
+	SpamChatToggleLabel.Parent = SpamChatToggleButton
+	SpamChatToggleLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SpamChatToggleLabel.BorderSizePixel = 0
+	SpamChatToggleLabel.Position = UDim2.new(0, 0, -0.0405144952, 0)
+	SpamChatToggleLabel.Size = UDim2.new(0, 199, 0, 19)
+	SpamChatToggleLabel.ZIndex = 2
+	SpamChatToggleLabel.Font = Enum.Font.SciFi
+	SpamChatToggleLabel.Text = "  Spam Chat"
+	SpamChatToggleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SpamChatToggleLabel.TextSize = 14.000
+	SpamChatToggleLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	MessageHere.Name =  Unnamed_CheatHider() --"MessageHere"
+	MessageHere.Parent = ChatSystemFrame
+	MessageHere.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	MessageHere.BorderSizePixel = 0
+	MessageHere.Position = UDim2.new(0, 0, 0.150792241, 0)
+	MessageHere.Size = UDim2.new(0, 198, 0, 24)
+	MessageHere.ZIndex = 3
+	MessageHere.ClearTextOnFocus = false
+	MessageHere.Font = Enum.Font.SourceSans
+	MessageHere.PlaceholderText = "Message Here"
+	MessageHere.Text = ""
+	MessageHere.TextColor3 = Color3.fromRGB(255, 255, 255)
+	MessageHere.TextScaled = true
+	MessageHere.TextSize = 14.000
+	MessageHere.TextWrapped = true
+
+	Player_Hitboxes.Name =  Unnamed_CheatHider() --"Player_Hitboxes"
+	Player_Hitboxes.Parent = MainMenu
+	Player_Hitboxes.Active = true
+	Player_Hitboxes.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	Player_Hitboxes.BorderSizePixel = 0
+	Player_Hitboxes.Position = UDim2.new(0.0325581394, 0, 0.582959533, 0)
+	Player_Hitboxes.Size = UDim2.new(0, 200, 0, 193)
+	Player_Hitboxes.ZIndex = 5
+	Player_Hitboxes.BottomImage = "rbxassetid://0"
+	Player_Hitboxes.CanvasSize = UDim2.new(0, 0, 0, 0)
+	Player_Hitboxes.MidImage = "rbxassetid://0"
+	Player_Hitboxes.ScrollBarThickness = 0
+	Player_Hitboxes.TopImage = "rbxassetid://0"
+
+	HitboxesLabel.Name =  Unnamed_CheatHider() --"HitboxesLabel"
+	HitboxesLabel.Parent = Player_Hitboxes
+	HitboxesLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	HitboxesLabel.BackgroundTransparency = 1.000
+	HitboxesLabel.BorderSizePixel = 0
+	HitboxesLabel.Position = UDim2.new(0, 0, -0.0054409788, 0)
+	HitboxesLabel.Size = UDim2.new(0, 199, 0, 16)
+	HitboxesLabel.ZIndex = 6
+	HitboxesLabel.Font = Enum.Font.SciFi
+	HitboxesLabel.Text = "Hitboxes"
+	HitboxesLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HitboxesLabel.TextScaled = true
+	HitboxesLabel.TextSize = 14.000
+	HitboxesLabel.TextWrapped = true
+
+	HeadHitboxText.Name =  Unnamed_CheatHider() --"Head Hitbox Text"
+	HeadHitboxText.Parent = Player_Hitboxes
+	HeadHitboxText.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	HeadHitboxText.BorderSizePixel = 0
+	HeadHitboxText.Position = UDim2.new(-0.00499999989, 0, 0.191893578, 0)
+	HeadHitboxText.Size = UDim2.new(0, 200, 0, 18)
+	HeadHitboxText.ZIndex = 6
+	HeadHitboxText.ClearTextOnFocus = false
+	HeadHitboxText.Font = Enum.Font.SourceSans
+	HeadHitboxText.PlaceholderText = "Head Size"
+	HeadHitboxText.Text = "10"
+	HeadHitboxText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HeadHitboxText.TextScaled = true
+	HeadHitboxText.TextSize = 14.000
+	HeadHitboxText.TextWrapped = true
+
+	HeadHitboxLabel.Name =  Unnamed_CheatHider() --"Head HitboxLabel"
+	HeadHitboxLabel.Parent = Player_Hitboxes
+	HeadHitboxLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	HeadHitboxLabel.BackgroundTransparency = 1.000
+	HeadHitboxLabel.BorderSizePixel = 0
+	HeadHitboxLabel.Position = UDim2.new(-0.00499999989, 0, 0.0937803611, 0)
+	HeadHitboxLabel.Size = UDim2.new(0, 199, 0, 16)
+	HeadHitboxLabel.ZIndex = 6
+	HeadHitboxLabel.Font = Enum.Font.SciFi
+	HeadHitboxLabel.Text = "Head Hitbox"
+	HeadHitboxLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HeadHitboxLabel.TextScaled = true
+	HeadHitboxLabel.TextSize = 14.000
+	HeadHitboxLabel.TextWrapped = true
+
+	SetHeadHitboxBtn.Name =  Unnamed_CheatHider() --"SetHead HitboxBtn"
+	SetHeadHitboxBtn.Parent = Player_Hitboxes
+	SetHeadHitboxBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SetHeadHitboxBtn.BorderSizePixel = 0
+	SetHeadHitboxBtn.Position = UDim2.new(-0.00999999978, 0, 0.282191604, 0)
+	SetHeadHitboxBtn.Size = UDim2.new(0, 203, 0, 19)
+	SetHeadHitboxBtn.ZIndex = 6
+	SetHeadHitboxBtn.Font = Enum.Font.SourceSans
+	SetHeadHitboxBtn.Text = "Set Head Size"
+	SetHeadHitboxBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SetHeadHitboxBtn.TextSize = 18.000
+	SetHeadHitboxBtn.TextWrapped = true
+	SetHeadHitboxBtn.MouseButton1Down:connect(function()
+		function MrgunzPlayers()
+			for i,v in pairs(game:GetChildren()) do
+				if v.ClassName == "Players" then
+					return v.Name
+				end
+			end
+		end
+		local players = MrgunzPlayers()
+		local plr = game[players].LocalPlayer
+		coroutine.resume(coroutine.create(function()
+			while  wait(1) do
+				coroutine.resume(coroutine.create(function()
+					for _,v in pairs(game[players]:GetPlayers()) do
+						if v.Name ~= plr.Name and v.Character then
+							v.Character.HeadHB.CanCollide = false
+							v.Character.HeadHB.Massless = true
+							v.Character.HeadHB.Transparency = TransparencyHeadTEXT.Text
+							v.Character.HeadHB.Size = Vector3.new(HeadHitboxText.Text,HeadHitboxText.Text,HeadHitboxText.Text,HeadHitboxText.Text)
+						end
+					end
+				end))
+			end
+		end))
+	end)
+
+	SetChesthitboxBtn.Name =  Unnamed_CheatHider() --"SetChest hitboxBtn"
+	SetChesthitboxBtn.Parent = Player_Hitboxes
+	SetChesthitboxBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SetChesthitboxBtn.BorderSizePixel = 0
+	SetChesthitboxBtn.Position = UDim2.new(-0.00499999989, 0, 0.624160528, 0)
+	SetChesthitboxBtn.Size = UDim2.new(0, 201, 0, 19)
+	SetChesthitboxBtn.ZIndex = 6
+	SetChesthitboxBtn.Font = Enum.Font.SourceSans
+	SetChesthitboxBtn.Text = "Set Chest Size"
+	SetChesthitboxBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SetChesthitboxBtn.TextSize = 18.000
+	SetChesthitboxBtn.TextWrapped = true
+	SetChesthitboxBtn.MouseButton1Down:connect(function()
+		function MrgunzPlayers()
+			for i,v in pairs(game:GetChildren()) do
+				if v.ClassName == "Players" then
+					return v.Name
+				end
+			end
+		end
+		local players = MrgunzPlayers()
+		local plr = game[players].LocalPlayer
+		coroutine.resume(coroutine.create(function()
+			while  wait(1) do
+				coroutine.resume(coroutine.create(function()
+					for _,v in pairs(game[players]:GetPlayers()) do
+						if v.Name ~= plr.Name and v.Character then
+							v.Character.UpperTorso.CanCollide = false
+							v.Character.UpperTorso.Massless = true
+							v.Character.UpperTorso.Transparency = TransparencyChestTEXT.Text
+							v.Character.UpperTorso.Size = Vector3.new(ChestHitboxText.Text,ChestHitboxText.Text,ChestHitboxText.Text,ChestHitboxText.Text)
+						end
+					end
+				end))
+			end
+		end))
+	end)
+
+	ChestHitboxText.Name =  Unnamed_CheatHider() --"Chest Hitbox Text"
+	ChestHitboxText.Parent = Player_Hitboxes
+	ChestHitboxText.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	ChestHitboxText.BorderSizePixel = 0
+	ChestHitboxText.Position = UDim2.new(-0.00499999989, 0, 0.533862472, 0)
+	ChestHitboxText.Size = UDim2.new(0, 200, 0, 18)
+	ChestHitboxText.ZIndex = 6
+	ChestHitboxText.ClearTextOnFocus = false
+	ChestHitboxText.Font = Enum.Font.SourceSans
+	ChestHitboxText.PlaceholderText = "Chest Size"
+	ChestHitboxText.Text = "10"
+	ChestHitboxText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ChestHitboxText.TextScaled = true
+	ChestHitboxText.TextSize = 14.000
+	ChestHitboxText.TextWrapped = true
+
+	ChestHitboxLabel.Name =  Unnamed_CheatHider() --"Chest HitboxLabel"
+	ChestHitboxLabel.Parent = Player_Hitboxes
+	ChestHitboxLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ChestHitboxLabel.BackgroundTransparency = 1.000
+	ChestHitboxLabel.BorderSizePixel = 0
+	ChestHitboxLabel.Position = UDim2.new(-0.00499999989, 0, 0.435749263, 0)
+	ChestHitboxLabel.Size = UDim2.new(0, 199, 0, 16)
+	ChestHitboxLabel.ZIndex = 6
+	ChestHitboxLabel.Font = Enum.Font.SciFi
+	ChestHitboxLabel.Text = "Chest Hitbox"
+	ChestHitboxLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ChestHitboxLabel.TextScaled = true
+	ChestHitboxLabel.TextSize = 14.000
+	ChestHitboxLabel.TextWrapped = true
+
+	TransparencyChestTEXT.Name =  Unnamed_CheatHider() --"Transparency ChestTEXT"
+	TransparencyChestTEXT.Parent = Player_Hitboxes
+	TransparencyChestTEXT.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	TransparencyChestTEXT.BorderSizePixel = 0
+	TransparencyChestTEXT.Position = UDim2.new(0.754999995, 0, 0.824018121, 0)
+	TransparencyChestTEXT.Size = UDim2.new(0, 38, 0, 18)
+	TransparencyChestTEXT.ZIndex = 6
+	TransparencyChestTEXT.ClearTextOnFocus = false
+	TransparencyChestTEXT.Font = Enum.Font.SourceSans
+	TransparencyChestTEXT.PlaceholderText = "Chest Transparency"
+	TransparencyChestTEXT.Text = "0.6"
+	TransparencyChestTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TransparencyChestTEXT.TextScaled = true
+	TransparencyChestTEXT.TextSize = 14.000
+	TransparencyChestTEXT.TextWrapped = true
+
+	TransparencyHeadTEXT.Name =  Unnamed_CheatHider() --"Transparency HeadTEXT"
+	TransparencyHeadTEXT.Parent = Player_Hitboxes
+	TransparencyHeadTEXT.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	TransparencyHeadTEXT.BorderSizePixel = 0
+	TransparencyHeadTEXT.Position = UDim2.new(0.754999995, 0, 0.725572526, 0)
+	TransparencyHeadTEXT.Size = UDim2.new(0, 37, 0, 18)
+	TransparencyHeadTEXT.ZIndex = 6
+	TransparencyHeadTEXT.ClearTextOnFocus = false
+	TransparencyHeadTEXT.Font = Enum.Font.SourceSans
+	TransparencyHeadTEXT.PlaceholderText = "Head Transparency"
+	TransparencyHeadTEXT.Text = "0.6"
+	TransparencyHeadTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TransparencyHeadTEXT.TextScaled = true
+	TransparencyHeadTEXT.TextSize = 14.000
+	TransparencyHeadTEXT.TextWrapped = true
+
+	TransparencyHeadLabel.Name =  Unnamed_CheatHider() --"Transparency HeadLabel"
+	TransparencyHeadLabel.Parent = Player_Hitboxes
+	TransparencyHeadLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TransparencyHeadLabel.BackgroundTransparency = 1.000
+	TransparencyHeadLabel.BorderSizePixel = 0
+	TransparencyHeadLabel.Position = UDim2.new(0.0732557699, 0, 0.730570555, 0)
+	TransparencyHeadLabel.Size = UDim2.new(0, 129, 0, 17)
+	TransparencyHeadLabel.ZIndex = 6
+	TransparencyHeadLabel.Font = Enum.Font.SciFi
+	TransparencyHeadLabel.Text = "Transparency Head"
+	TransparencyHeadLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TransparencyHeadLabel.TextScaled = true
+	TransparencyHeadLabel.TextSize = 14.000
+	TransparencyHeadLabel.TextWrapped = true
+
+	TransparencyChestLabel.Name =  Unnamed_CheatHider() --"Transparency ChestLabel"
+	TransparencyChestLabel.Parent = Player_Hitboxes
+	TransparencyChestLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TransparencyChestLabel.BackgroundTransparency = 1.000
+	TransparencyChestLabel.BorderSizePixel = 0
+	TransparencyChestLabel.Position = UDim2.new(0.0732557699, 0, 0.824017942, 0)
+	TransparencyChestLabel.Size = UDim2.new(0, 129, 0, 19)
+	TransparencyChestLabel.ZIndex = 6
+	TransparencyChestLabel.Font = Enum.Font.SciFi
+	TransparencyChestLabel.Text = "Transparency Chest"
+	TransparencyChestLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TransparencyChestLabel.TextScaled = true
+	TransparencyChestLabel.TextSize = 14.000
+	TransparencyChestLabel.TextWrapped = true
+
+	Hackula_Hitboxes.Name =  Unnamed_CheatHider() --"Hackula_Hitboxes"
+	Hackula_Hitboxes.Parent = MainMenu
+	Hackula_Hitboxes.Active = true
+	Hackula_Hitboxes.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	Hackula_Hitboxes.BorderSizePixel = 0
+	Hackula_Hitboxes.Position = UDim2.new(0.0279069766, 0, 0.83562839, 0)
+	Hackula_Hitboxes.Size = UDim2.new(0, 201, 0, 99)
+	Hackula_Hitboxes.ZIndex = 5
+	Hackula_Hitboxes.BottomImage = "rbxassetid://0"
+	Hackula_Hitboxes.CanvasSize = UDim2.new(0, 0, 0, 0)
+	Hackula_Hitboxes.MidImage = "rbxassetid://0"
+	Hackula_Hitboxes.ScrollBarThickness = 0
+	Hackula_Hitboxes.TopImage = "rbxassetid://0"
+
+	HackulaHeadHitboxLabel.Name =  Unnamed_CheatHider() --"Hackula Head HitboxLabel"
+	HackulaHeadHitboxLabel.Parent = Hackula_Hitboxes
+	HackulaHeadHitboxLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	HackulaHeadHitboxLabel.BackgroundTransparency = 1.000
+	HackulaHeadHitboxLabel.BorderSizePixel = 0
+	HackulaHeadHitboxLabel.Position = UDim2.new(0.0150753772, 0, 0.23519434, 0)
+	HackulaHeadHitboxLabel.Size = UDim2.new(0, 194, 0, 16)
+	HackulaHeadHitboxLabel.ZIndex = 6
+	HackulaHeadHitboxLabel.Font = Enum.Font.SciFi
+	HackulaHeadHitboxLabel.Text = "Hackula Head Hitbox"
+	HackulaHeadHitboxLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HackulaHeadHitboxLabel.TextScaled = true
+	HackulaHeadHitboxLabel.TextSize = 14.000
+	HackulaHeadHitboxLabel.TextWrapped = true
+
+	HackulaHeadHitboxText.Name =  Unnamed_CheatHider() --"Hackula Head Hitbox Text"
+	HackulaHeadHitboxText.Parent = Hackula_Hitboxes
+	HackulaHeadHitboxText.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	HackulaHeadHitboxText.BorderSizePixel = 0
+	HackulaHeadHitboxText.Position = UDim2.new(-0.0199999996, 0, 0.414115787, 0)
+	HackulaHeadHitboxText.Size = UDim2.new(0, 200, 0, 18)
+	HackulaHeadHitboxText.ZIndex = 6
+	HackulaHeadHitboxText.ClearTextOnFocus = false
+	HackulaHeadHitboxText.Font = Enum.Font.SourceSans
+	HackulaHeadHitboxText.PlaceholderText = "Head Size"
+	HackulaHeadHitboxText.Text = "10"
+	HackulaHeadHitboxText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HackulaHeadHitboxText.TextScaled = true
+	HackulaHeadHitboxText.TextSize = 14.000
+	HackulaHeadHitboxText.TextWrapped = true
+
+	SetHackulaHeadHitboxBtn.Name =  Unnamed_CheatHider() --"Set Hackula Head HitboxBtn"
+	SetHackulaHeadHitboxBtn.Parent = Hackula_Hitboxes
+	SetHackulaHeadHitboxBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SetHackulaHeadHitboxBtn.BorderSizePixel = 0
+	SetHackulaHeadHitboxBtn.Position = UDim2.new(-0.0050000241, 0, 0.595322728, 0)
+	SetHackulaHeadHitboxBtn.Size = UDim2.new(0, 201, 0, 19)
+	SetHackulaHeadHitboxBtn.ZIndex = 6
+	SetHackulaHeadHitboxBtn.Font = Enum.Font.SourceSans
+	SetHackulaHeadHitboxBtn.Text = "Set Head Size"
+	SetHackulaHeadHitboxBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SetHackulaHeadHitboxBtn.TextSize = 18.000
+	SetHackulaHeadHitboxBtn.TextWrapped = true
+	SetHackulaHeadHitboxBtn.MouseButton1Click:Connect(function()
+		game:GetService("Workspace").Map.Hackula.UpperTorso.Size = Vector3.new(HackulaHeadHitboxText.Text,HackulaHeadHitboxText.Text,HackulaHeadHitboxText.Text)
+		game:GetService("Workspace").Map.Hackula.UpperTorso.Massless = true
+		game:GetService("Workspace").Map.Hackula.UpperTorso.CanCollide = false
+		game:GetService("Workspace").Map.Hackula.UpperTorso.Transparency = HackulaTransparencyHeadTEXT.Text
+	end)
+
+	HackulaTransparencyHeadTEXT.Name =  Unnamed_CheatHider() --"Hackula Transparency HeadTEXT"
+	HackulaTransparencyHeadTEXT.Parent = Hackula_Hitboxes
+	HackulaTransparencyHeadTEXT.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	HackulaTransparencyHeadTEXT.BorderSizePixel = 0
+	HackulaTransparencyHeadTEXT.Position = UDim2.new(0.699999988, 0, 0.77995038, 0)
+	HackulaTransparencyHeadTEXT.Size = UDim2.new(0, 45, 0, 18)
+	HackulaTransparencyHeadTEXT.ZIndex = 6
+	HackulaTransparencyHeadTEXT.ClearTextOnFocus = false
+	HackulaTransparencyHeadTEXT.Font = Enum.Font.SourceSans
+	HackulaTransparencyHeadTEXT.PlaceholderText = "Head Transparency"
+	HackulaTransparencyHeadTEXT.Text = "0.6"
+	HackulaTransparencyHeadTEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HackulaTransparencyHeadTEXT.TextScaled = true
+	HackulaTransparencyHeadTEXT.TextSize = 14.000
+	HackulaTransparencyHeadTEXT.TextWrapped = true
+
+	HackulaTransparencyHeadLabel.Name =  Unnamed_CheatHider() --"Hackula Transparency HeadLabel"
+	HackulaTransparencyHeadLabel.Parent = Hackula_Hitboxes
+	HackulaTransparencyHeadLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	HackulaTransparencyHeadLabel.BackgroundTransparency = 1.000
+	HackulaTransparencyHeadLabel.BorderSizePixel = 0
+	HackulaTransparencyHeadLabel.Position = UDim2.new(0.0732557699, 0, 0.784948587, 0)
+	HackulaTransparencyHeadLabel.Size = UDim2.new(0, 129, 0, 17)
+	HackulaTransparencyHeadLabel.ZIndex = 6
+	HackulaTransparencyHeadLabel.Font = Enum.Font.SciFi
+	HackulaTransparencyHeadLabel.Text = "Transparency Head"
+	HackulaTransparencyHeadLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HackulaTransparencyHeadLabel.TextScaled = true
+	HackulaTransparencyHeadLabel.TextSize = 14.000
+	HackulaTransparencyHeadLabel.TextWrapped = true
+
+	UI.Name =  Unnamed_CheatHider() --"UI"
+	UI.Parent = MainMenu
+	UI.Active = true
+	UI.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	UI.BorderSizePixel = 0
+	UI.Position = UDim2.new(0.0325581394, 0, 0.0463907793, 0)
+	UI.Size = UDim2.new(0, 200, 0, 627)
+	UI.BottomImage = "rbxassetid://0"
+	UI.CanvasSize = UDim2.new(0, 0, 0, 0)
+	UI.MidImage = "rbxassetid://0"
+	UI.ScrollBarThickness = 0
+	UI.TopImage = "rbxassetid://0"
+
+	SettingsMenu.Name =  "Join https://discord.com/invite/9n868vFG2N"
+	SettingsMenu.Parent = UnnamedCheatArsenal
+	SettingsMenu.Active = true
+	SettingsMenu.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	SettingsMenu.BorderColor3 = Color3.fromRGB(255, 0, 0)
+	SettingsMenu.Position = UDim2.new(0.166015625, 0, 0.0312950164, 0)
+	SettingsMenu.Size = UDim2.new(0, 215, 0, 669)
+
+	SettingsMenuLabel.Name =  Unnamed_CheatHider() --"Settings Menu Label"
+	SettingsMenuLabel.Parent = SettingsMenu
+	SettingsMenuLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	SettingsMenuLabel.BackgroundTransparency = 1.000
+	SettingsMenuLabel.BorderSizePixel = 0
+	SettingsMenuLabel.Size = UDim2.new(0, 214, 0, 23)
+	SettingsMenuLabel.ZIndex = 2
+	SettingsMenuLabel.Font = Enum.Font.SciFi
+	SettingsMenuLabel.Text = "  Settings"
+	SettingsMenuLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	SettingsMenuLabel.TextSize = 14.000
+	SettingsMenuLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	Credits_Frame.Name =  Unnamed_CheatHider() --"Credits_Frame"
+	Credits_Frame.Parent = SettingsMenu
+	Credits_Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	Credits_Frame.BorderSizePixel = 0
+	Credits_Frame.Position = UDim2.new(0.0372093022, 0, 0.0448430479, 0)
+	Credits_Frame.Size = UDim2.new(0, 200, 0, 219)
+
+	ijhuygtfikhujymn21njbh4.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4.Position = UDim2.new(-0.00499999989, 0, -0.00296905381, 0)
+	ijhuygtfikhujymn21njbh4.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4.Text = "Scripts By Mrgunz#2289"
+	ijhuygtfikhujymn21njbh4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4.TextSize = 14.000
+
+	ijhuygtfikhujymn21njbh4_2.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4_2.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_2.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4_2.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4_2.Position = UDim2.new(-0.00499999989, 0, 0.108471945, 0)
+	ijhuygtfikhujymn21njbh4_2.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4_2.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4_2.Text = "UI By Mrgunz#2289"
+	ijhuygtfikhujymn21njbh4_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_2.TextSize = 14.000
+
+	ijhuygtfikhujymn21njbh4_3.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4_3.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_3.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4_3.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4_3.Position = UDim2.new(-0.00499999989, 0, 0.219912946, 0)
+	ijhuygtfikhujymn21njbh4_3.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4_3.Visible = false
+	ijhuygtfikhujymn21njbh4_3.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4_3.Text = "  Name Label"
+	ijhuygtfikhujymn21njbh4_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_3.TextSize = 14.000
+
+	ijhuygtfikhujymn21njbh4_4.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4_4.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_4.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4_4.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4_4.Position = UDim2.new(-0.00499999989, 0, 0.331353933, 0)
+	ijhuygtfikhujymn21njbh4_4.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4_4.Visible = false
+	ijhuygtfikhujymn21njbh4_4.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4_4.Text = "  Name Label"
+	ijhuygtfikhujymn21njbh4_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_4.TextSize = 14.000
+
+	ijhuygtfikhujymn21njbh4_5.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4_5.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_5.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4_5.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4_5.Position = UDim2.new(0, 0, 0.554235935, 0)
+	ijhuygtfikhujymn21njbh4_5.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4_5.Visible = false
+	ijhuygtfikhujymn21njbh4_5.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4_5.Text = "  Name Label"
+	ijhuygtfikhujymn21njbh4_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_5.TextSize = 14.000
+
+	ijhuygtfikhujymn21njbh4_6.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4_6.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_6.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4_6.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4_6.Position = UDim2.new(0, 0, 0.665676951, 0)
+	ijhuygtfikhujymn21njbh4_6.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4_6.Visible = false
+	ijhuygtfikhujymn21njbh4_6.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4_6.Text = "  Name Label"
+	ijhuygtfikhujymn21njbh4_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_6.TextSize = 14.000
+
+	ijhuygtfikhujymn21njbh4_7.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4_7.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_7.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4_7.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4_7.Position = UDim2.new(0, 0, 0.777117848, 0)
+	ijhuygtfikhujymn21njbh4_7.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4_7.Visible = false
+	ijhuygtfikhujymn21njbh4_7.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4_7.Text = "  Name Label"
+	ijhuygtfikhujymn21njbh4_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_7.TextSize = 14.000
+
+	ijhuygtfikhujymn21njbh4_8.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4_8.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_8.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4_8.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4_8.Position = UDim2.new(0, 0, 0.442794949, 0)
+	ijhuygtfikhujymn21njbh4_8.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4_8.Visible = false
+	ijhuygtfikhujymn21njbh4_8.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4_8.Text = "  Name Label"
+	ijhuygtfikhujymn21njbh4_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_8.TextSize = 14.000
+
+	ijhuygtfikhujymn21njbh4_9.Name =  Unnamed_CheatHider() --"ijhuygtfikhujy#mn21njbh4"
+	ijhuygtfikhujymn21njbh4_9.Parent = Credits_Frame
+	ijhuygtfikhujymn21njbh4_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_9.BackgroundTransparency = 1.000
+	ijhuygtfikhujymn21njbh4_9.BorderSizePixel = 0
+	ijhuygtfikhujymn21njbh4_9.Position = UDim2.new(0, 0, 0.888558984, 0)
+	ijhuygtfikhujymn21njbh4_9.Size = UDim2.new(0, 200, 0, 24)
+	ijhuygtfikhujymn21njbh4_9.Visible = false
+	ijhuygtfikhujymn21njbh4_9.Font = Enum.Font.SciFi
+	ijhuygtfikhujymn21njbh4_9.Text = "  Name Label"
+	ijhuygtfikhujymn21njbh4_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ijhuygtfikhujymn21njbh4_9.TextSize = 14.000
+
+	TEXT.Name =  Unnamed_CheatHider()
+	TEXT.Parent = SettingsMenu
+	TEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TEXT.BackgroundTransparency = 1.000
+	TEXT.BorderSizePixel = 0
+	TEXT.Position = UDim2.new(0, 0, 0.965620339, 0)
+	TEXT.Size = UDim2.new(0, 214, 0, 23)
+	TEXT.ZIndex = 2
+	TEXT.Font = Enum.Font.SourceSans
+	TEXT.Text = Mrgunz_Ver
+	TEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TEXT.TextSize = 15.000
+	TEXT.TextXAlignment = Enum.TextXAlignment.Right
+
+	DeleteMenu.Name =  Unnamed_CheatHider() --"Delete Menu"
+	DeleteMenu.Parent = SettingsMenu
+	DeleteMenu.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	DeleteMenu.BorderSizePixel = 0
+	DeleteMenu.Position = UDim2.new(0.0325581394, 0, 0.922272027, 0)
+	DeleteMenu.Size = UDim2.new(0, 200, 0, 19)
+	DeleteMenu.Font = Enum.Font.SourceSans
+	DeleteMenu.Text = "Delete Menu"
+	DeleteMenu.TextColor3 = Color3.fromRGB(255, 255, 255)
+	DeleteMenu.TextSize = 14.000
+	DeleteMenu.MouseButton1Down:connect(function()
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+	end)
+
+	HideShow.Name =  Unnamed_CheatHider() --"Hide/Show"
+	HideShow.Parent = SettingsMenu
+	HideShow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	HideShow.BackgroundTransparency = 1.000
+	HideShow.BorderSizePixel = 0
+	HideShow.Position = UDim2.new(0.00465116277, 0, 0.382660747, 0)
+	HideShow.Size = UDim2.new(0, 214, 0, 23)
+	HideShow.ZIndex = 2
+	HideShow.Font = Enum.Font.SciFi
+	HideShow.Text = "F2 Hide/Show"
+	HideShow.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HideShow.TextSize = 14.000
+
+	SettingToggles.Name =  Unnamed_CheatHider() --"SettingToggles"
+	SettingToggles.Parent = SettingsMenu
+	SettingToggles.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	SettingToggles.BackgroundTransparency = 1.000
+	SettingToggles.BorderSizePixel = 0
+	SettingToggles.Position = UDim2.new(0.0325581394, 0, 0.720478356, 0)
+	SettingToggles.Size = UDim2.new(0, 200, 0, 125)
+
+	UIListLayout_2.Name = tostring(math.random())
+	UIListLayout_2.Parent = SettingToggles
+	UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Bottom
+
+	UICornerToggleButton.Name =  Unnamed_CheatHider() --"UICorner Toggle Button"
+	UICornerToggleButton.Parent = SettingToggles
+	UICornerToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	UICornerToggleButton.BackgroundTransparency = 1.000
+	UICornerToggleButton.BorderSizePixel = 0
+	UICornerToggleButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	UICornerToggleButton.Size = UDim2.new(0, 192, 0, 19)
+	UICornerToggleButton.ZIndex = 2
+	UICornerToggleButton.Font = Enum.Font.SourceSans
+	UICornerToggleButton.Text = "Off  "
+	UICornerToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	UICornerToggleButton.TextSize = 14.000
+	UICornerToggleButton.TextXAlignment = Enum.TextXAlignment.Right
+	UICornerToggleButton.MouseButton1Down:connect(function()
+		local button = UICornerToggleButton
+		local on = false
+		button.MouseButton1Click:Connect(function()
+			on = not on
+			if on then
+				button.Text = "On  "
+				button.TextColor3 = Color3.fromRGB(0, 255, 0)
+				game:GetService("CoreGui")["Unnamed Cheat - Arsenal"].Tools["Mrgunz_UICorner"]:Clone().Parent = game:GetService("CoreGui")["Unnamed Cheat - Arsenal"]["Made By Mrgunz#2289"];
+				game:GetService("CoreGui")["Unnamed Cheat - Arsenal"].Tools["Mrgunz_UICorner"]:Clone().Parent = game:GetService("CoreGui")["Unnamed Cheat - Arsenal"]["Join https://discord.com/invite/9n868vFG2N"];
+			end
+			if on == false then
+				button.Text = "Off  "
+				button.TextColor3 = Color3.fromRGB(255, 255, 255)
+				for i,v in pairs(game:GetService("CoreGui")["Unnamed Cheat - Arsenal"]["Join https://discord.com/invite/9n868vFG2N"]:GetChildren()) do
+					if v.ClassName == "UICorner" then
+						v:Destroy()
+					end
+				end
+				for i,v in pairs(game:GetService("CoreGui")["Unnamed Cheat - Arsenal"]["Made By Mrgunz#2289"]:GetChildren()) do
+					if v.ClassName == "UICorner" then
+						v:Destroy()
+					end
+				end
+			end
+		end)
+	end)
+	
+	local Advertise = false
+	local Chat_system = {
+		"Get Unnamed Cheat",
+		"Start Using Unnamed Cheat",
+		"What Are You Waiting For? Get Unnamed Cheat",
+		"Unnamed Cheat Dis: 9n868vFG2N",
+	}
+
+
+	UICornerToggleLabel.Name =  Unnamed_CheatHider() --"UICorner Toggle Label"
+	UICornerToggleLabel.Parent = UICornerToggleButton
+	UICornerToggleLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	UICornerToggleLabel.BorderSizePixel = 0
+	UICornerToggleLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	UICornerToggleLabel.Size = UDim2.new(0, 200, 0, 19)
+	UICornerToggleLabel.Font = Enum.Font.SciFi
+	UICornerToggleLabel.Text = "  Use UICorner "
+	UICornerToggleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	UICornerToggleLabel.TextSize = 14.000
+	UICornerToggleLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	WatermarkToggleButton.Name = tostring(math.random())
+	WatermarkToggleButton.Parent = SettingToggles
+	WatermarkToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	WatermarkToggleButton.BackgroundTransparency = 1.000
+	WatermarkToggleButton.BorderSizePixel = 0
+	WatermarkToggleButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	WatermarkToggleButton.Size = UDim2.new(0, 192, 0, 19)
+	WatermarkToggleButton.ZIndex = 2
+	WatermarkToggleButton.Font = Enum.Font.SourceSans
+	WatermarkToggleButton.Text = "On  "
+	WatermarkToggleButton.TextColor3 = Color3.fromRGB(85, 255, 0)
+	WatermarkToggleButton.TextSize = 14.000
+	WatermarkToggleButton.Visible = false
+	WatermarkToggleLabel.Visible = false
+	WatermarkToggleButton.TextXAlignment = Enum.TextXAlignment.Right
+	WatermarkToggleButton.MouseButton1Down:connect(function()
+		
+	end)
+
+	WatermarkToggleLabel.Name =  tostring(math.random())
+	WatermarkToggleLabel.Parent = WatermarkToggleButton
+	WatermarkToggleLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	WatermarkToggleLabel.BorderSizePixel = 0
+	WatermarkToggleLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	WatermarkToggleLabel.Size = UDim2.new(0, 200, 0, 19)
+	WatermarkToggleLabel.Font = Enum.Font.SciFi
+	WatermarkToggleLabel.Text = "  Watermark"
+	WatermarkToggleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	WatermarkToggleLabel.TextSize = 14.000
+	WatermarkToggleLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+	AdvertiseToggleButton.Name =  tostring(math.random())
+	AdvertiseToggleButton.Parent = SettingToggles
+	AdvertiseToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	AdvertiseToggleButton.BackgroundTransparency = 1.000
+	AdvertiseToggleButton.BorderSizePixel = 0
+	AdvertiseToggleButton.Position = UDim2.new(0.0722886175, 0, 0.472346783, 0)
+	AdvertiseToggleButton.Size = UDim2.new(0, 192, 0, 19)
+	AdvertiseToggleButton.ZIndex = 2
+	AdvertiseToggleButton.Font = Enum.Font.SourceSans
+	AdvertiseToggleButton.Text = "Off  "
+	AdvertiseToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AdvertiseToggleButton.TextSize = 14.000
+	AdvertiseToggleButton.TextXAlignment = Enum.TextXAlignment.Right
+	AdvertiseToggleButton.MouseButton1Down:connect(function()
+		local button = AdvertiseToggleButton
+		local on = false
+		button.MouseButton1Click:Connect(function()
+			on = not on
+			if on then
+				button.Text = "On  "
+				button.TextColor3 = Color3.fromRGB(85, 255, 0)
+				Advertise = true
+				local function Chat()
+					local players = game.Players:GetChildren()
+					local howManyPlayers = #players
+
+					local ran = math.random(1,howManyPlayers)
+					local chosenOne = players[ran]
+					local chance = math.random(1,10)
+
+					if chance <= 5 then
+						game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(chosenOne.Name.." " ..Chat_system[math.random(1,#Chat_system)],false,true,true)
+					end
+				end
+				repeat wait(math.random(1,2))
+					Chat()
+				until Advertise == false
+			end
+			if on == false then
+				button.Text = "Off  "
+				button.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Advertise = false
+			end
+		end)
+	end)
+
+	AdvertiseToggleLabel.Name =  tostring(math.random())
+	AdvertiseToggleLabel.Parent = AdvertiseToggleButton
+	AdvertiseToggleLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	AdvertiseToggleLabel.BorderSizePixel = 0
+	AdvertiseToggleLabel.Position = UDim2.new(-0.020833334, 0, -0.0405161008, 0)
+	AdvertiseToggleLabel.Size = UDim2.new(0, 200, 0, 19)
+	AdvertiseToggleLabel.Font = Enum.Font.SciFi
+	AdvertiseToggleLabel.Text = "  Advertise"
+	AdvertiseToggleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AdvertiseToggleLabel.TextSize = 14.000
+	AdvertiseToggleLabel.TextXAlignment = Enum.TextXAlignment.Left
+	
+	Tools.Name = "Tools"
+	Tools.Parent = UnnamedCheatArsenal
+
+	Mrgunz_UICorner.Name = "Mrgunz_UICorner"
+	Mrgunz_UICorner.Parent = Tools
+
+	local function UNAWQ_fake_script()
+		local script = Instance.new('LocalScript', MainMenu)
+		function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+		counter = 1
+		while wait(0.1)do
+			script.Parent.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
+			counter = counter + 0.01
+		end
+	end
+	coroutine.wrap(UNAWQ_fake_script)()
+	local function AUOIIL_fake_script()
+		local script = Instance.new('LocalScript', SettingsMenu)
+		function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+		counter = 1
+		while wait(0.1)do
+			script.Parent.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
+			counter = counter + 0.01
+		end
+	end
+	coroutine.wrap(AUOIIL_fake_script)()
+	Mrgunz_Give_Money()
+end
