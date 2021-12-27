@@ -1,0 +1,169 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Loader"))();
+CheatName = "Unnamed Cheat - Arsenal Archived"
+for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+	if v.Name == CheatName then
+		v:Destroy()
+	end
+end
+local UnnamedCheatArsenalArchived = Instance.new("ScreenGui")
+local MainMenu = Instance.new("Frame")
+local MainMenuLabel = Instance.new("TextLabel")
+local KillAllToggleButton = Instance.new("TextButton")
+local KillAllToggleLabel = Instance.new("TextLabel")
+local UnnamedCheat_KillAll = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/List"))();
+UnnamedCheatArsenalArchived.Name = CheatName
+UnnamedCheatArsenalArchived.Parent = game.CoreGui
+UnnamedCheatArsenalArchived.Enabled = true
+game:GetService("UserInputService").InputBegan:connect(function(input, gameProcessed)
+	if input.KeyCode == Enum.KeyCode.F2 then
+		if not gameProcessed then
+			UnnamedCheatArsenalArchived.Enabled = not UnnamedCheatArsenalArchived.Enabled
+		end
+	end
+end)
+game:GetService("UserInputService").InputBegan:connect(function(input, gameProcessed)
+	if input.KeyCode == Enum.KeyCode.RightShift then
+		if not gameProcessed then
+			UnnamedCheatArsenalArchived.Enabled = not UnnamedCheatArsenalArchived.Enabled
+		end
+	end
+end)
+
+MainMenu.Name = tostring(math.random())
+MainMenu.Parent = UnnamedCheatArsenalArchived
+MainMenu.Active = true
+MainMenu.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainMenu.BorderColor3 = Color3.fromRGB(255, 0, 0)
+MainMenu.Position = UDim2.new(0.021484375, 0, 0.0312950164, 0)
+MainMenu.Size = UDim2.new(0, 215, 0, 669)
+
+MainMenuLabel.Name = tostring(math.random())
+MainMenuLabel.Parent = MainMenu
+MainMenuLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainMenuLabel.BackgroundTransparency = 1.000
+MainMenuLabel.BorderSizePixel = 0
+MainMenuLabel.Size = UDim2.new(0, 214, 0, 23)
+MainMenuLabel.ZIndex = 2
+MainMenuLabel.Font = Enum.Font.SciFi
+MainMenuLabel.Text = "  Unnamed Cheat"
+MainMenuLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainMenuLabel.TextSize = 14.000
+MainMenuLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+KillAllToggleButton.Name = tostring(math.random())
+KillAllToggleButton.Parent = MainMenu
+KillAllToggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KillAllToggleButton.BackgroundTransparency = 1.000
+KillAllToggleButton.BorderSizePixel = 0
+KillAllToggleButton.Position = UDim2.new(0.0372093022, 0, 0.0478325784, 0)
+KillAllToggleButton.Size = UDim2.new(0, 198, 0, 19)
+KillAllToggleButton.ZIndex = 2
+KillAllToggleButton.Font = Enum.Font.SourceSans
+KillAllToggleButton.Text = "Off  "
+KillAllToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAllToggleButton.TextSize = 14.000
+KillAllToggleButton.TextXAlignment = Enum.TextXAlignment.Right
+KillAllToggleButton.MouseButton1Down:connect(function()
+	local button = KillAllToggleButton
+	local on = false
+	button.MouseButton1Click:Connect(function()
+		on = not on
+		if on then
+			button.Text = "On  "
+			button.TextColor3 = Color3.fromRGB(0, 255, 0)
+			UnnamedCheat_KillAll = true
+			repeat wait(0.0001)
+				local args = {[1] = "Knife"}game:GetService("Players").LocalPlayer.Backpack.EquipTool:FireServer(unpack(args))
+				pcall(function()
+					for i,v in pairs(game.Players:GetChildren()) do
+						if v.Character and v.Character.Humanoid.Health>0 and game:GetService("Players").LocalPlayer.Character.Knife.Handle and v.Team ~= game.Players.LocalPlayer.Team then
+							local args = {
+								[1] = Vector3.new(),
+								[2] = v.Character.Head,
+								[3] = Vector3.new(),
+								[4] = CFrame.new(Vector3.new(), Vector3.new()),
+								[5] = game:GetService("Players").LocalPlayer,
+								[6] = Vector3.new(),
+								[7] = Vector3.new(),
+								[8] = 1,
+								[9] = 999999999,
+								[10] = 0.5,
+								[11] = 100,
+								[12] = 50,
+								[13] = 15,
+								[14] = 20,
+								[15] = 20,
+								[16] = 5,
+								[17] = 1,
+								[18] = true,
+								[19] = game:GetService("Players").LocalPlayer.Character.Knife.Handle,
+								[20] = "Knife",
+								[21] = false,
+								[22] = false}
+							game:GetService("Players").LocalPlayer.Character.Knife.Gun.sv_gun.Fire:FireServer(unpack(args))
+						end
+					end
+				end)
+				pcall(function()
+					for i,v in pairs(game.Players:GetChildren()) do
+						if v.Character and v.Character.Humanoid.Health>0 and game:GetService("Players").LocalPlayer.Character["Golden Knife"].Handle and v.Team ~= game.Players.LocalPlayer.Team then
+							local args = {
+								[1] = Vector3.new(),
+								[2] = v.Character.Head,
+								[3] = Vector3.new(),
+								[4] = CFrame.new(Vector3.new(), Vector3.new()),
+								[5] = game:GetService("Players").LocalPlayer,
+								[6] = Vector3.new(),
+								[7] = Vector3.new(),
+								[8] = 11,
+								[9] = 999999999,
+								[10] = 0.5,
+								[11] = 100,
+								[12] = 50,
+								[13] = 15,
+								[14] = 20,
+								[15] = 20,
+								[16] = 5,
+								[17] = 11,
+								[18] = true,
+								[19] = game:GetService("Players").LocalPlayer.Character["Golden Knife"].Handle,
+								[20] = "Golden Knife",
+								[21] = false,
+								[22] = false}
+							game:GetService("Players").LocalPlayer.Character["Golden Knife"].Gun.sv_gun.Fire:FireServer(unpack(args))
+						end
+					end
+				end)
+			until UnnamedCheat_KillAll == false
+		end
+		if on == false then
+			button.Text = "Off  "
+			button.TextColor3 = Color3.fromRGB(255, 255, 255)
+			UnnamedCheat_KillAll = false
+		end
+	end)
+end)
+
+KillAllToggleLabel.Name = tostring(math.random())
+KillAllToggleLabel.Parent = KillAllToggleButton
+KillAllToggleLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+KillAllToggleLabel.BorderSizePixel = 0
+KillAllToggleLabel.Position = UDim2.new(0, 0, -0.0405161008, 0)
+KillAllToggleLabel.Size = UDim2.new(0, 197, 0, 19)
+KillAllToggleLabel.Font = Enum.Font.SciFi
+KillAllToggleLabel.Text = "  Kill All"
+KillAllToggleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillAllToggleLabel.TextSize = 14.000
+KillAllToggleLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+local function DKUK_fake_script() 
+	local script = Instance.new('LocalScript', MainMenu)
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	counter = 1
+	while wait(0.1)do
+		script.Parent.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(DKUK_fake_script)()
