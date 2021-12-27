@@ -1,0 +1,1706 @@
+CheatName = "UnnamedCheat"
+COREGUI = game:GetService("CoreGui")
+for i,v in pairs(COREGUI:GetChildren()) do
+	if v.Name == CheatName then
+		v:Destroy()
+	end
+end
+Mrgunz_Ver = "6.7"
+Updates = " "
+UnnamedCheat_Games = "  Hotel Elephant\n  old tc2 cte\n  Blockbears Roleplay\n  KAT Modded\n  Rogue [TEST PLACE]\n  BloodFest\n  The Tower of Hell\n  Tower of Hell\n  Lucky Blocks Battle Towers Tycoon\n  NERF Strike\n  Pit of Hell\n  Hide and Seek Transform\n  Weaponry\n  Impulse: Remastered\n  Battle Royale Simulator\n  Unit: Classified\n  Battle Royale Simulator 2\n  KAT\n  Westbound\n  Operation Scorpion\n  Mad Paintball: Reloaded\n  Jailbreak\n  Rolling Thunder\n  CB:RO Archived\n  MURDER\n  RECOIL\n  Counter Blox: Modded\n  Typical Colors 2\n  Typical Colors 2 [old rehaul]\n  Touch Tennis\n  Robber\n  Arsenal 2018 - 1.0\n  Arsenal Archived\n  Pirates vs. Ninjas\n  Counter Blox\n  Ronopoly\n  Defender's Depot\n  Arsenal"
+UnnamedCheatUser = game:GetService("Players").LocalPlayer
+UnnamedCheatPlayers = game:GetService("Players")
+local UnnamedCheat = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UnnamedCheat_UICorner = Instance.new("UICorner")
+local Main_Image_Label = Instance.new("TextLabel")
+local Main_Image_Label_UICorner = Instance.new("UICorner")
+local GameID = Instance.new("TextButton")
+local CheatStatus_ScrollingFrame = Instance.new("ScrollingFrame")
+local CheatStatus_UICorner = Instance.new("UICorner")
+local CheatStatus_Text = Instance.new("TextBox")
+local CheatStatus_Text_UICorner = Instance.new("UICorner")
+local CheatStatus_UIListLayout = Instance.new("UIListLayout")
+local CheatStatusUI = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Unnamed = Instance.new("TextLabel")
+local Cheat = Instance.new("TextLabel")
+local TEXT = Instance.new("TextLabel")
+local Discord_Btn = Instance.new("TextButton")
+local Discord_Btn_UICorner = Instance.new("UICorner")
+local LoadCheat_Btn = Instance.new("TextButton")
+local LoadCheat_Btn_UICorner = Instance.new("UICorner")
+local JobID = Instance.new("TextButton")
+local UnnamedCheatUI = Instance.new("Frame")
+local UnnamedCheat_UIListLayout = Instance.new("UIListLayout")
+local _1_LoadCheatUI = Instance.new("Frame")
+local LoadCheat_Btn = Instance.new("TextButton")
+local LoadCheat_Btn_UICorner = Instance.new("UICorner")
+local LoadCheat_UIListLayout = Instance.new("UIListLayout")
+local _2_DiscordUI = Instance.new("Frame")
+local Discord_UIListLayout = Instance.new("UIListLayout")
+local Discord_Btn = Instance.new("TextButton")
+local Discord_Btn_UICorner = Instance.new("UICorner")
+local _3_CloseUI = Instance.new("Frame")
+local Close_UIListLayout = Instance.new("UIListLayout")
+local Close_Btn = Instance.new("TextButton")
+local Close_Btn_UICorner = Instance.new("UICorner")
+local _3_SettingsUI = Instance.new("Frame")
+local _3_SettingsUI = Instance.new("Frame")
+local Settings_UIListLayout = Instance.new("UIListLayout")
+local Settings_Btn = Instance.new("TextButton")
+local Settings_Btn_UICorner = Instance.new("UICorner")
+local NameChangerFrame = Instance.new("Frame")
+local UnnamedCheat_NameChanger_UICorner = Instance.new("UICorner")
+local NameChangerLabel = Instance.new("TextLabel")
+local NameChanger_Cheat = Instance.new("TextLabel")
+local NameChanger_Unnamed = Instance.new("TextLabel")
+local SetNameBtn = Instance.new("TextButton")
+local Close_NameChanger_Btn = Instance.new("TextButton")
+local NameText = Instance.new("TextBox")
+local SettingsFrame = Instance.new("Frame")
+local UnnamedCheat_Settings_UICorner = Instance.new("UICorner")
+local GameStatus_UI = Instance.new("Frame")
+local UnnamedCheat_Settings_UIListLayout = Instance.new("UIListLayout")
+local Copy_GameName_Btn = Instance.new("TextButton")
+local Copy_GameID_Btn = Instance.new("TextButton")
+local Copy_JobID_Btn = Instance.new("TextButton")
+local UnnamedCheat_Settings_UI = Instance.new("Frame")
+local UnnamedCheat_Settings_UIListLayout_2 = Instance.new("UIListLayout")
+local _1_GameListUI = Instance.new("Frame")
+local GameList_UIListLayout = Instance.new("UIListLayout")
+local Open_GameList_Btn = Instance.new("TextButton")
+local GameList_Btn_UICorner = Instance.new("UICorner")
+local _3_Settings_CloseUI = Instance.new("Frame")
+local Settings_Close_UIListLayout = Instance.new("UIListLayout")
+local Settings_Close_Btn = Instance.new("TextButton")
+local Settings_Close_Btn_UICorner = Instance.new("UICorner")
+local _2_NameChanger_CloseUI = Instance.new("Frame")
+local NameChanger_Close_UIListLayout = Instance.new("UIListLayout")
+local Open_NameChanger_Btn = Instance.new("TextButton")
+local NameChanger_Close_Btn_UICorner = Instance.new("UICorner")
+local GameStatus_Settings_UI = Instance.new("Frame")
+local Settings_UICorner = Instance.new("UICorner")
+local Settings_Cheat = Instance.new("TextLabel")
+local Settings_Unnamed = Instance.new("TextLabel")
+local GameListFrame = Instance.new("Frame")
+local UnnamedCheat_GameList_UICorner = Instance.new("UICorner")
+local GameListStatus_ScrollingFrame = Instance.new("ScrollingFrame")
+local GameListStatus_UICorner = Instance.new("UICorner")
+local GameListStatus_Text = Instance.new("TextBox")
+local GameListStatus_Text_UICorner = Instance.new("UICorner")
+local GameListStatus_UIListLayout = Instance.new("UIListLayout")
+local GameListStatusUI = Instance.new("Frame")
+local GameList_UICorner = Instance.new("UICorner")
+local GameList_Unnamed = Instance.new("TextLabel")
+local GameList_Cheat = Instance.new("TextLabel")
+local UnnamedCheat_GameList_UI = Instance.new("Frame")
+local UnnamedCheat_UIListLayout = Instance.new("UIListLayout")
+local _1_CloseUI = Instance.new("Frame")
+local GameList_Close_UIListLayout = Instance.new("UIListLayout")
+local GameList_Close_Btn = Instance.new("TextButton")
+local GameList_Close_Btn_UICorner = Instance.new("UICorner")
+function UnnamedCheat_Hide()
+	MainFrame:TweenPosition(UDim2.new(0,0.449653983,0,025113374,0),"InOut","Quart",10,true,nil)
+	NameChangerFrame:TweenPosition(UDim2.new(0,0.449653983,0,025113374,0),"InOut","Quart",10,true,nil)
+	GameListFrame:TweenPosition(UDim2.new(0,0.449653983,0,025113374,0),"InOut","Quart",10,true,nil)
+	SettingsFrame:TweenPosition(UDim2.new(0,0.449653983,0,025113374,0),"InOut","Quart",10,true,nil)
+end
+function UnnamedCheat_Reload()
+	local UnnamedCheat = [[ repeat wait() until game.Players.LocalPlayer repeat wait() until game.Players.LocalPlayer.Character loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/UnnamedCheat/main/Loader"))(); ]]
+	UnnamedCheat = string.format(UnnamedCheat,tostring(UnnamedCheatUser.Character.HumanoidRootPart.Position),"Unnamed_Cheat.lua")
+	writefile('Unnamed_Cheat.lua',UnnamedCheat)
+	syn.queue_on_teleport(UnnamedCheat)
+end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/List"))();
+function UnnamedCheat_Delete()
+	for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+		if v.Name == CheatName then
+			v:Destroy()
+		end
+	end
+end
+local dragger = {}; do
+	local mouse        = game:GetService("Players").LocalPlayer:GetMouse();
+	local inputService = game:GetService('UserInputService');
+	local heartbeat    = game:GetService("RunService").Heartbeat;
+	function dragger.new(frame)
+		local s, event = pcall(function()
+			return frame.MouseEnter
+		end)
+		if s then
+			frame.Active = true;
+			event:connect(function()
+				local input = frame.InputBegan:connect(function(key)
+					if key.UserInputType == Enum.UserInputType.MouseButton1 then
+						local objectPosition = Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y);
+						while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+							pcall(function()
+								frame:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X + (frame.Size.X.Offset * frame.AnchorPoint.X), 0, mouse.Y - objectPosition.Y + (frame.Size.Y.Offset * frame.AnchorPoint.Y)), 'Out', 'Linear', 0.1, true);
+							end)
+						end
+					end
+				end)
+				local leave;
+				leave = frame.MouseLeave:connect(function()
+					input:disconnect();
+					leave:disconnect();
+				end)
+			end)
+		end
+	end
+end
+function UnnamedCheat_NameChanger()
+	local COREGUI = game:GetService("CoreGui")
+	local MrgunzPlayers = game:GetService("Players")
+	local LocalPlayer = MrgunzPlayers.LocalPlayer
+	local PlayerGui = LocalPlayer:FindFirstChildWhichIsA("PlayerGui")
+	local OnDescendantAdded; OnDescendantAdded = function(Descendant)
+		if Descendant:IsA("TextLabel") or Descendant:IsA("TextButton") then
+			Descendant.Text = string.gsub(Descendant.Text, MrgunzPlayers.LocalPlayer.Name, NameText.Text)
+			Descendant:GetPropertyChangedSignal("Text"):Connect(function()
+				Descendant.Text = string.gsub(Descendant.Text, MrgunzPlayers.LocalPlayer.Name, NameText.Text)
+			end)
+		end
+	end
+	if true then
+		PlayerGui.DescendantAdded:Connect(OnDescendantAdded)
+		for _, Descendant in pairs(PlayerGui:GetDescendants()) do
+			OnDescendantAdded(Descendant)
+		end
+	end
+	COREGUI.DescendantAdded:Connect(OnDescendantAdded)
+	for _, Descendant in pairs(COREGUI:GetDescendants()) do
+		OnDescendantAdded(Descendant)
+	end
+end
+function Load_Dragger()
+	dragger.new(MainFrame)
+	dragger.new(GameListFrame)
+	dragger.new(SettingsFrame)
+	dragger.new(NameChangerFrame)
+	GameListFrame.Draggable = true
+	MainFrame.Draggable = true
+	SettingsFrame.Draggable = true
+	NameChangerFrame.Draggable = true
+end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/List"))();
+function Unnamed_CheatHider()
+	local length = math.random(24,80)
+	local array = {}
+	for i = 1, length do
+		array[i] = string.char(math.random(92, 243))
+	end
+	return table.concat(array)
+end
+function Game_Check()
+	if game.PlaceId==23578803 then
+		Main_Image_Label.Text = "Hotel Elephant"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 23578803"
+	end
+	if game.PlaceId==3814974141 then
+		Main_Image_Label.Text = "old tc2 cte"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 3814974141"
+	end
+	if game.PlaceId==2711985967 then
+		Main_Image_Label.Text = "Blockbears Roleplay"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2711985967"
+	end
+	if game.PlaceId==6238411952 then
+		Main_Image_Label.Text = "KAT Modded"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6238411952"
+	end
+	if game.PlaceId==2648571346 then
+		Main_Image_Label.Text = "Rogue [TEST PLACE]"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2648571346"
+	end
+	if game.PlaceId==2045431354 then
+		Main_Image_Label.Text = "Rogue [TEST PLACE]"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2045431354"
+	end
+	if game.PlaceId==48994649 then
+		Main_Image_Label.Text = "BloodFest"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 48994649"
+	end
+	if game.PlaceId==2127551566 then
+		Main_Image_Label.Text = "The Tower of Hell"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2127551566"
+	end
+	if game.PlaceId==3582763398 then
+		Main_Image_Label.Text = "Pro Tower of Hell"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 3582763398"
+	end
+	if game.PlaceId==1962086868 then
+		Main_Image_Label.Text = "Tower of Hell"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 1962086868"
+	end
+	if game.PlaceId==6607278340 then
+		Main_Image_Label.Text = "Lucky Blocks Battle Towers Tycoon"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6607278340"
+	end
+	if game.PlaceId==6245984328 then
+		Main_Image_Label.Text = "NERF Strike"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6245984328"
+	end
+	if game.PlaceId==5902786179 then
+		Main_Image_Label.Text = "Pit of Hell"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 5902786179"
+	end
+	if game.PlaceId==5530512077 then
+		Main_Image_Label.Text = "Hide and Seek Transform"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 5530512077"
+	end
+	if game.PlaceId==3297964905 then
+		Main_Image_Label.Text = "Weaponry"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 3297964905"
+	end
+	if game.PlaceId==3204503125 then
+		Main_Image_Label.Text = "Impulse: Remastered"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 3204503125"
+	end
+	if game.PlaceId==4292776423 then
+		Main_Image_Label.Text = "Unit: Classified"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 4292776423"
+	end
+	if game.PlaceId==6551386772 then
+		Main_Image_Label.Text = "Battle Royale Simulator"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6551386772"
+	end
+	if game.PlaceId==6801410829 then
+		Main_Image_Label.Text = "Battle Royale Simulator 2"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6801410829"
+	end
+	if game.PlaceId==621129760 then
+		Main_Image_Label.Text = "KAT"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 621129760"
+	end
+	if game.PlaceId==2474168535 then
+		Main_Image_Label.Text = "Westbound"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2474168535"
+	end
+	if game.PlaceId==6125258259 then
+		Main_Image_Label.Text = "Operation Scorpion"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6125258259"
+	end
+	if game.PlaceId==2607077439 then
+		Main_Image_Label.Text = "Operation Scorpion"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2607077439"
+	end
+	if game.PlaceId==6417036614 then
+		Main_Image_Label.Text = "Operation Scorpion"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6417036614"
+	end
+	if game.PlaceId==7255828467 then
+		Main_Image_Label.Text = "Operation Scorpion"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 7255828467"
+	end
+	if game.PlaceId==2978450615 then
+		Main_Image_Label.Text = "Mad Paintball: Reloaded"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2978450615"
+	end
+	if game.PlaceId==606849621 then
+		Main_Image_Label.Text = "Jailbreak"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 606849621"
+	end
+	if game.PlaceId==4572253581 then
+		Main_Image_Label.Text = "MURDER"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 4572253581"
+	end
+	if game.PlaceId==2182391396 then
+		Main_Image_Label.Text = "CB:RO Archived"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2182391396"
+	end
+	if game.PlaceId==286090429 then
+		Main_Image_Label.Text = "Arsenal"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 286090429"
+	end
+	if game.PlaceId==5390300927 then
+		Main_Image_Label.Text = "TESTING BRANCH | RECOIL"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 5390300927"
+	end
+	if game.PlaceId==4806026225 then
+		Main_Image_Label.Text = "Defender's Depot"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 4806026225"
+	end
+	if game.PlaceId==328028363 then
+		Main_Image_Label.Text = "Typical Colors 2"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 328028363"
+	end
+	if game.PlaceId==3311740703 then
+		Main_Image_Label.Text = "Counter Blox: Modded"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 3311740703"
+	end
+	if game.PlaceId==604626588 then
+		Main_Image_Label.Text = "Typical Colors 2 [old rehaul]"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 604626588"
+	end
+	if game.PlaceId==6522618979 then
+		Main_Image_Label.Text = "Touch Tennis"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6522618979"
+	end
+	if game.PlaceId==876052679 then
+		Main_Image_Label.Text = "Robber"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 876052679"
+	end
+	if game.PlaceId==3995983522 then
+		Main_Image_Label.Text = "Arsenal 2018 - 1.0"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 3995983522"
+	end
+	if game.PlaceId==2609550642 then
+		Main_Image_Label.Text = "Arsenal Archived"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2609550642"
+	end
+	if game.PlaceId==4651779470 then
+		Main_Image_Label.Text = "RECOIL"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 4651779470"
+	end
+	if game.PlaceId==2218671952 then
+		Main_Image_Label.Text = "Recoil Training Server"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 2218671952"
+	end
+	if game.PlaceId==7029243758 then
+		Main_Image_Label.Text = "Pirates vs. Ninjas"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 7029243758"
+	end
+	if game.PlaceId==301549746 then
+		Main_Image_Label.Text = "Counter Blox"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 301549746"
+	end
+	if game.PlaceId==1869597719 then
+		Main_Image_Label.Text = "Counter Blox"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 1869597719"
+	end
+	if game.PlaceId==1480424328 then
+		Main_Image_Label.Text = "Counter Blox"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 1480424328"
+	end
+	if game.PlaceId==6875760739 then
+		Main_Image_Label.Text = "Ronopoly"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6875760739"
+	end
+	if game.PlaceId==6677985923 then
+		Main_Image_Label.Text = "Millionaire Empire Tycoon"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 6677985923"
+	end
+	if game.PlaceId==7686955826 then
+		Main_Image_Label.Text = "Rolling Thunder"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 7686955826"
+	end
+	if game.PlaceId==7774632319 then
+		Main_Image_Label.Text = "Unnamed Cheat Test Place"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 7774632319"
+	end
+	--[[
+	if game.PlaceId==7070641437 then
+		Main_Image_Label.Text = "Blox strike"
+		_1_LoadCheatUI.Visible = true
+		GameID.Text = "Game ID: 7070641437"
+	end
+	]]--
+end
+function Load_Cheat()
+	if game.PlaceId==7774632319 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		game.StarterGui:SetCore("SendNotification", {Title = "Unnamed Cheat";Text = "Loaded";Duration = 5;})
+	end
+	if game.PlaceId==3814974141 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/OLD%20TC2%20CTE"))();
+	end
+	if game.PlaceId==2711985967 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Blockbears_Roleplay"))();
+	end
+	if game.PlaceId==6238411952 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/KAT%20Modded"))();
+	end
+	if game.PlaceId==2648571346 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Rogue%20%5BTEST%20PLACE%5D"))();
+	end
+	if game.PlaceId==2045431354 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Rogue%20%5BTEST%20PLACE%5D"))();
+	end
+	if game.PlaceId==48994649 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/BLOODFEST"))();
+	end
+	if game.PlaceId==2127551566 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Tower%20of%20Hell"))();
+	end
+	if game.PlaceId==3582763398 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Tower%20of%20Hell"))();
+	end
+	if game.PlaceId==1962086868 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Tower%20of%20Hell"))();
+	end
+	if game.PlaceId==6607278340 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Lucky%20Blocks%20Battle%20Towers%20Tycoon"))();
+	end
+	if game.PlaceId==6245984328 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/NERF%20Strike"))();
+	end
+	if game.PlaceId==5902786179 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Pit%20of%20Hell"))();
+	end
+	if game.PlaceId==5530512077 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Hide%20and%20Seek%20Transform"))();
+	end
+	if game.PlaceId==3297964905 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Weaponry"))();
+	end
+	if game.PlaceId==3204503125 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Impulse%3A%20Remastered"))();
+	end
+	if game.PlaceId==6551386772 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Battle%20Royale%20Simulator%202"))();
+	end
+	if game.PlaceId==6677985923 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Millionaire_Empire_Tycoon"))();
+	end
+	if game.PlaceId==23578803 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Hotel_Elephant"))();
+	end
+	if game.PlaceId==4292776423 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Unit%3A%20Classified"))();
+	end
+	if game.PlaceId==7070641437 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Bloxstrike"))();
+	end
+	if game.PlaceId==6801410829 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Battle%20Royale%20Simulator%202"))();
+	end
+	if game.PlaceId==621129760 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/KAT"))();
+	end
+	if game.PlaceId==2474168535 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Westbound"))();
+	end
+	if game.PlaceId==6125258259 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Operation_Scorpion"))();
+	end
+	if game.PlaceId==2607077439 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Operation_Scorpion"))();
+	end
+	if game.PlaceId==6417036614 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Operation_Scorpion"))();
+	end
+	if game.PlaceId==7255828467 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Operation_Scorpion"))();
+	end
+	if game.PlaceId==2978450615 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Mad%20Paintball%3A%20Reloaded"))();
+	end
+	if game.PlaceId==606849621 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Jailbreak"))();
+	end	
+	if game.PlaceId==2182391396 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/CB%3ARO%20Archived"))();
+	end	
+	if game.PlaceId==286090429 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Arsenal"))();
+	end
+	if game.PlaceId==5390300927 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Recoil%20Aim%20Assist%20Gui"))();
+	end
+	if game.PlaceId==4806026225 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Defender's%20Depot"))();
+	end
+	if game.PlaceId==7686955826 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Rolling_Thunder"))();
+	end
+	if game.PlaceId==328028363 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/TC2_Menu"))();
+	end
+	if game.PlaceId==3311740703 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Unnamed_Cheat"))();
+	end
+
+	if game.PlaceId==604626588 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/TC2_old_rehaul"))();
+	end
+	if game.PlaceId==6522618979 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Touch%20Tennis%20Cheat"))();
+	end
+	if game.PlaceId==876052679 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Robber_Menu"))();
+	end
+	if game.PlaceId==3995983522 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Arsenal2018Menu"))();
+	end
+	if game.PlaceId==2609550642 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Arsenal%20Archived%20Kill%20All"))();
+	end
+	if game.PlaceId==4651779470 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Recoil%20Aim%20Assist%20Gui"))();
+	end
+	if game.PlaceId==2218671952 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Recoil%20Aim%20Assist%20Gui"))();
+	end
+	if game.PlaceId==7029243758 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Pirates%20vs.%20Ninjas"))();
+	end	
+	if game.PlaceId==301549746 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Counter%20Blox"))();
+	end	
+	if game.PlaceId==1480424328 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+			if v.Name == CheatName then
+				v:Destroy()
+			end
+		end
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Counter%20Blox"))();
+	end		if game.PlaceId==1869597719 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/Counter%20Blox"))();
+	end	
+	if game.PlaceId==4572253581 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/Swaggereric/master/MURDER"))();
+	end	
+	if game.PlaceId==6875760739 then
+		LoadCheat_Btn.Text = "Loading"
+		wait(0.7)
+		UnnamedCheat_Delete()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Ronopoly"))();
+	end	
+end
+UnnamedCheat_JobID = game.JobId
+UnnamedCheat.Name = CheatName
+UnnamedCheat.Parent = COREGUI
+UnnamedCheat.Enabled = true
+UnnamedCheat.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+game:GetService("UserInputService").InputBegan:connect(function(input, gameProcessed)
+	if input.KeyCode == Enum.KeyCode.F5 then
+		if not gameProcessed then
+			UnnamedCheat.Enabled = not UnnamedCheat.Enabled
+		end
+	end
+end)
+game:GetService("UserInputService").InputBegan:connect(function(input, gameProcessed)
+	if input.KeyCode == Enum.KeyCode.RightShift then
+		if not gameProcessed then
+			UnnamedCheat.Enabled = not UnnamedCheat.Enabled
+		end
+	end
+end)
+
+NameChangerFrame.Name = Unnamed_CheatHider()
+NameChangerFrame.Parent = UnnamedCheat
+NameChangerFrame.Active = true
+NameChangerFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+NameChangerFrame.Position = UDim2.new(0.233644128, 0, 0.0673913211, 0)
+NameChangerFrame.Size = UDim2.new(0, 244, 0, 183)
+NameChangerFrame.Visible= false
+
+UnnamedCheat_NameChanger_UICorner.CornerRadius = UDim.new(0, 19)
+UnnamedCheat_NameChanger_UICorner.Name = Unnamed_CheatHider()
+UnnamedCheat_NameChanger_UICorner.Parent = NameChangerFrame
+
+NameChangerLabel.Name = Unnamed_CheatHider()
+NameChangerLabel.Parent = NameChangerFrame
+NameChangerLabel.Active = true
+NameChangerLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameChangerLabel.BackgroundTransparency = 1.000
+NameChangerLabel.BorderSizePixel = 0
+NameChangerLabel.Position = UDim2.new(0.0737704858, 0, 0.262295067, 0)
+NameChangerLabel.Size = UDim2.new(0, 208, 0, 21)
+NameChangerLabel.Font = Enum.Font.SourceSans
+NameChangerLabel.Text = "Name Changer"
+NameChangerLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+NameChangerLabel.TextSize = 14.000
+
+NameChanger_Cheat.Name = Unnamed_CheatHider()
+NameChanger_Cheat.Parent = NameChangerFrame
+NameChanger_Cheat.Active = true
+NameChanger_Cheat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameChanger_Cheat.BackgroundTransparency = 1.000
+NameChanger_Cheat.Position = UDim2.new(0.498692185, 0, 0.0289019812, 0)
+NameChanger_Cheat.Size = UDim2.new(0, 69, 0, 32)
+NameChanger_Cheat.Font = Enum.Font.SourceSans
+NameChanger_Cheat.Text = "Cheat"
+NameChanger_Cheat.TextColor3 = Color3.fromRGB(255, 255, 255)
+NameChanger_Cheat.TextScaled = true
+NameChanger_Cheat.TextSize = 14.000
+NameChanger_Cheat.TextStrokeTransparency = 0.000
+NameChanger_Cheat.TextWrapped = true
+NameChanger_Cheat.TextXAlignment = Enum.TextXAlignment.Left
+
+NameChanger_Unnamed.Name = Unnamed_CheatHider()
+NameChanger_Unnamed.Parent = NameChangerFrame
+NameChanger_Unnamed.Active = true
+NameChanger_Unnamed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameChanger_Unnamed.BackgroundTransparency = 1.000
+NameChanger_Unnamed.Position = UDim2.new(0.066182062, 0, 0.0289019719, 0)
+NameChanger_Unnamed.Size = UDim2.new(0, 106, 0, 32)
+NameChanger_Unnamed.Font = Enum.Font.SourceSans
+NameChanger_Unnamed.Text = "Unnamed"
+NameChanger_Unnamed.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameChanger_Unnamed.TextScaled = true
+NameChanger_Unnamed.TextSize = 14.000
+NameChanger_Unnamed.TextStrokeTransparency = 0.580
+NameChanger_Unnamed.TextWrapped = true
+NameChanger_Unnamed.TextXAlignment = Enum.TextXAlignment.Left
+
+SetNameBtn.Name = Unnamed_CheatHider()
+SetNameBtn.Parent = NameChangerFrame
+SetNameBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetNameBtn.BackgroundTransparency = 1.000
+SetNameBtn.BorderSizePixel = 0
+SetNameBtn.Position = UDim2.new(0.0737704858, 0, 0.5573771, 0)
+SetNameBtn.Size = UDim2.new(0, 208, 0, 21)
+SetNameBtn.Font = Enum.Font.SourceSans
+SetNameBtn.Text = "Set Name"
+SetNameBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetNameBtn.TextSize = 14.000
+SetNameBtn.MouseButton1Down:connect(function()
+	SetNameBtn.Text ="Setting Name To "..NameText.Text
+	wait(1.3)
+	UnnamedCheat_NameChanger()
+	NameChangerFrame.Visible = false
+	_2_NameChanger_CloseUI.Visible = false
+	wait(1)
+	SetNameBtn.Text = "Join https://discord.gg/mYswJdQr9Q"
+end)
+
+Close_NameChanger_Btn.Name =Unnamed_CheatHider()
+Close_NameChanger_Btn.Parent = NameChangerFrame
+Close_NameChanger_Btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_NameChanger_Btn.BackgroundTransparency = 1.000
+Close_NameChanger_Btn.BorderSizePixel = 0
+Close_NameChanger_Btn.Position = UDim2.new(0.0737704858, 0, 0.704918087, 0)
+Close_NameChanger_Btn.Size = UDim2.new(0, 208, 0, 21)
+Close_NameChanger_Btn.Font = Enum.Font.SourceSans
+Close_NameChanger_Btn.Text = "Close"
+Close_NameChanger_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close_NameChanger_Btn.TextSize = 14.000
+Close_NameChanger_Btn.MouseButton1Down:connect(function()
+	NameChangerFrame.Visible = false
+end)
+
+NameText.Name = Unnamed_CheatHider()
+NameText.Parent = NameChangerFrame
+NameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameText.BackgroundTransparency = 1.000
+NameText.BorderSizePixel = 0
+NameText.Position = UDim2.new(0.0737704933, 0, 0.409055412, 0)
+NameText.Size = UDim2.new(0, 208, 0, 21)
+NameText.ClearTextOnFocus = false
+NameText.Font = Enum.Font.SourceSans
+NameText.PlaceholderText = "Name Here"
+NameText.Text = ""
+NameText.TextColor3 = Color3.fromRGB(255, 255, 255)
+NameText.TextScaled = true
+NameText.TextSize = 14.000
+NameText.TextWrapped = true
+
+SettingsFrame.Name = Unnamed_CheatHider()
+SettingsFrame.Parent = UnnamedCheat
+SettingsFrame.Active = true
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SettingsFrame.Position = UDim2.new(0.5424909, 0, 0.506110013, 0)
+SettingsFrame.Size = UDim2.new(0, 539, 0, 315)
+SettingsFrame.Visible = false
+
+UnnamedCheat_Settings_UICorner.CornerRadius = UDim.new(0, 19)
+UnnamedCheat_Settings_UICorner.Name = Unnamed_CheatHider()
+UnnamedCheat_Settings_UICorner.Parent = SettingsFrame
+
+GameStatus_UI.Name = Unnamed_CheatHider()
+GameStatus_UI.Parent = SettingsFrame
+GameStatus_UI.Active = true
+GameStatus_UI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameStatus_UI.BackgroundTransparency = 1.000
+GameStatus_UI.BorderSizePixel = 0
+GameStatus_UI.Position = UDim2.new(0.485064745, 0, 0.228100196, 0)
+GameStatus_UI.Size = UDim2.new(0, 260, 0, 208)
+GameStatus_UI.ZIndex = 3
+
+UnnamedCheat_Settings_UIListLayout.Name = Unnamed_CheatHider()
+UnnamedCheat_Settings_UIListLayout.Parent = GameStatus_UI
+UnnamedCheat_Settings_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UnnamedCheat_Settings_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Copy_GameName_Btn.Name = Unnamed_CheatHider()
+Copy_GameName_Btn.Parent = GameStatus_UI
+Copy_GameName_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Copy_GameName_Btn.BackgroundTransparency = 1.000
+Copy_GameName_Btn.BorderSizePixel = 0
+Copy_GameName_Btn.Position = UDim2.new(0.0134615386, 0, 0, 0)
+Copy_GameName_Btn.Size = UDim2.new(0, 260, 0, 16)
+Copy_GameName_Btn.ZIndex = 4
+Copy_GameName_Btn.AutoButtonColor = false
+Copy_GameName_Btn.Font = Enum.Font.Roboto
+Copy_GameName_Btn.Text = "Game Name: "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+Copy_GameName_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Copy_GameName_Btn.TextSize = 14.000
+Copy_GameName_Btn.TextWrapped = true
+Copy_GameName_Btn.TextXAlignment = Enum.TextXAlignment.Left
+Copy_GameName_Btn.MouseButton1Down:connect(function()
+	_G.PlaceName = game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+	local Link = set_clipboard or setclipboard or toclipboard or (Clipboard and Clipboard.set)
+	if Link then
+		Link(_G.PlaceName)
+	end
+	Copy_GameName_Btn.Text = "Game Name: ".."Copied."
+	wait(1.3)
+	Copy_GameName_Btn.Text = "Game Name: "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end)
+
+Copy_GameID_Btn.Name = Unnamed_CheatHider()
+Copy_GameID_Btn.Parent = GameStatus_UI
+Copy_GameID_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Copy_GameID_Btn.BackgroundTransparency = 1.000
+Copy_GameID_Btn.BorderSizePixel = 0
+Copy_GameID_Btn.Position = UDim2.new(0.0134615386, 0, 0.0769230798, 0)
+Copy_GameID_Btn.Size = UDim2.new(0, 260, 0, 16)
+Copy_GameID_Btn.ZIndex = 4
+Copy_GameID_Btn.AutoButtonColor = false
+Copy_GameID_Btn.Font = Enum.Font.Roboto
+Copy_GameID_Btn.Text = "Game ID: "..game.PlaceId
+Copy_GameID_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Copy_GameID_Btn.TextSize = 14.000
+Copy_GameID_Btn.TextWrapped = true
+Copy_GameID_Btn.TextXAlignment = Enum.TextXAlignment.Left
+Copy_GameID_Btn.MouseButton1Down:connect(function()
+	_G.PlaceID = game.PlaceId
+	local Link = set_clipboard or setclipboard or toclipboard or (Clipboard and Clipboard.set)
+	if Link then
+		Link(_G.PlaceID)
+	end
+	Copy_GameID_Btn.Text = "Game ID: ".."Copied."
+	wait(1.3)
+	Copy_GameID_Btn.Text = "Game ID: "..game.PlaceId
+end)
+
+Copy_JobID_Btn.Name = Unnamed_CheatHider()
+Copy_JobID_Btn.Parent = GameStatus_UI
+Copy_JobID_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Copy_JobID_Btn.BackgroundTransparency = 1.000
+Copy_JobID_Btn.BorderSizePixel = 0
+Copy_JobID_Btn.Position = UDim2.new(0.0134615386, 0, 0.15384616, 0)
+Copy_JobID_Btn.Size = UDim2.new(0, 260, 0, 16)
+Copy_JobID_Btn.ZIndex = 4
+Copy_JobID_Btn.AutoButtonColor = false
+Copy_JobID_Btn.Font = Enum.Font.Roboto
+Copy_JobID_Btn.Text = "Job ID: "..UnnamedCheat_JobID
+Copy_JobID_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Copy_JobID_Btn.TextSize = 12.000
+Copy_JobID_Btn.TextWrapped = false
+Copy_JobID_Btn.Visible = true
+Copy_JobID_Btn.TextXAlignment = Enum.TextXAlignment.Left
+Copy_JobID_Btn.MouseButton1Down:connect(function()
+	local Link = set_clipboard or setclipboard or toclipboard or (Clipboard and Clipboard.set)
+	if Link then
+		Link(UnnamedCheat_JobID)
+	end
+	Copy_JobID_Btn.Text = "Job ID: ".."Copied."
+	wait(1.3)
+	Copy_JobID_Btn.Text = "Job ID: "..UnnamedCheat_JobID
+end)
+
+UnnamedCheat_Settings_UI.Name =Unnamed_CheatHider()
+UnnamedCheat_Settings_UI.Parent = SettingsFrame
+UnnamedCheat_Settings_UI.Active = true
+UnnamedCheat_Settings_UI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnnamedCheat_Settings_UI.BackgroundTransparency = 1.000
+UnnamedCheat_Settings_UI.BorderSizePixel = 0
+UnnamedCheat_Settings_UI.Position = UDim2.new(0.033395119, 0, 0.227752984, 0)
+UnnamedCheat_Settings_UI.Size = UDim2.new(0, 175, 0, 226)
+
+UnnamedCheat_Settings_UIListLayout_2.Name =Unnamed_CheatHider()
+UnnamedCheat_Settings_UIListLayout_2.Parent = UnnamedCheat_Settings_UI
+UnnamedCheat_Settings_UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UnnamedCheat_Settings_UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+
+_1_GameListUI.Name = Unnamed_CheatHider()
+_1_GameListUI.Parent = UnnamedCheat_Settings_UI
+_1_GameListUI.Active = true
+_1_GameListUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1_GameListUI.BackgroundTransparency = 1.000
+_1_GameListUI.BorderSizePixel = 0
+_1_GameListUI.Position = UDim2.new(0, 0, 0.0592592582, 0)
+_1_GameListUI.Size = UDim2.new(0, 175, 0, 30)
+
+GameList_UIListLayout.Name = Unnamed_CheatHider()
+GameList_UIListLayout.Parent = _1_GameListUI
+GameList_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+GameList_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+GameList_UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Open_GameList_Btn.Name = Unnamed_CheatHider()
+Open_GameList_Btn.Parent = _1_GameListUI
+Open_GameList_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Open_GameList_Btn.Position = UDim2.new(0.53061223, 0, 0.15625, 0)
+Open_GameList_Btn.Size = UDim2.new(0, 175, 0, 27)
+Open_GameList_Btn.ZIndex = 2
+Open_GameList_Btn.AutoButtonColor = false
+Open_GameList_Btn.Font = Enum.Font.Roboto
+Open_GameList_Btn.Text = "Game List"
+Open_GameList_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open_GameList_Btn.TextSize = 19.000
+Open_GameList_Btn.TextWrapped = true
+Open_GameList_Btn.MouseButton1Down:connect(function()
+	GameListFrame.Visible=true
+end)
+
+GameList_Btn_UICorner.Name = Unnamed_CheatHider()
+GameList_Btn_UICorner.Parent = Open_GameList_Btn
+
+_2_NameChanger_CloseUI.Name = Unnamed_CheatHider()
+_2_NameChanger_CloseUI.Parent = UnnamedCheat_Settings_UI
+_2_NameChanger_CloseUI.Active = true
+_2_NameChanger_CloseUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2_NameChanger_CloseUI.BackgroundTransparency = 1.000
+_2_NameChanger_CloseUI.BorderSizePixel = 0
+_2_NameChanger_CloseUI.Position = UDim2.new(0, 0, 0.0592592582, 0)
+_2_NameChanger_CloseUI.Size = UDim2.new(0, 175, 0, 30)
+
+NameChanger_Close_UIListLayout.Name =Unnamed_CheatHider()
+NameChanger_Close_UIListLayout.Parent = _2_NameChanger_CloseUI
+NameChanger_Close_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+NameChanger_Close_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+NameChanger_Close_UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Open_NameChanger_Btn.Name =Unnamed_CheatHider()
+Open_NameChanger_Btn.Parent = _2_NameChanger_CloseUI
+Open_NameChanger_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Open_NameChanger_Btn.Position = UDim2.new(0.524897933, 0, -0.110416681, 0)
+Open_NameChanger_Btn.Size = UDim2.new(0, 175, 0, 27)
+Open_NameChanger_Btn.ZIndex = 2
+Open_NameChanger_Btn.AutoButtonColor = false
+Open_NameChanger_Btn.Font = Enum.Font.Roboto
+Open_NameChanger_Btn.Text = "Name Changer"
+Open_NameChanger_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open_NameChanger_Btn.TextSize = 19.000
+Open_NameChanger_Btn.Visible = true
+Open_NameChanger_Btn.TextWrapped = true
+Open_NameChanger_Btn.MouseButton1Down:connect(function()
+	NameChangerFrame.Visible = true
+end)
+
+NameChanger_Close_Btn_UICorner.Name = Unnamed_CheatHider()
+NameChanger_Close_Btn_UICorner.Parent = Open_NameChanger_Btn
+
+_3_Settings_CloseUI.Name = Unnamed_CheatHider()
+_3_Settings_CloseUI.Parent = UnnamedCheat_Settings_UI
+_3_Settings_CloseUI.Active = true
+_3_Settings_CloseUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3_Settings_CloseUI.BackgroundTransparency = 1.000
+_3_Settings_CloseUI.BorderSizePixel = 0
+_3_Settings_CloseUI.Position = UDim2.new(0, 0, 0.0592592582, 0)
+_3_Settings_CloseUI.Size = UDim2.new(0, 175, 0, 30)
+
+Settings_Close_UIListLayout.Name = Unnamed_CheatHider()
+Settings_Close_UIListLayout.Parent = _3_Settings_CloseUI
+Settings_Close_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+Settings_Close_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+Settings_Close_UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Settings_Close_Btn.Name = Unnamed_CheatHider()
+Settings_Close_Btn.Parent = _3_Settings_CloseUI
+Settings_Close_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Settings_Close_Btn.Position = UDim2.new(0.524897933, 0, -0.110416681, 0)
+Settings_Close_Btn.Size = UDim2.new(0, 175, 0, 27)
+Settings_Close_Btn.ZIndex = 2
+Settings_Close_Btn.AutoButtonColor = false
+Settings_Close_Btn.Font = Enum.Font.Roboto
+Settings_Close_Btn.Text = "Close"
+Settings_Close_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings_Close_Btn.TextSize = 19.000
+Settings_Close_Btn.TextWrapped = true
+Settings_Close_Btn.MouseButton1Down:connect(function()
+	SettingsFrame.Visible = false
+end)
+
+Settings_Close_Btn_UICorner.Name =Unnamed_CheatHider()
+Settings_Close_Btn_UICorner.Parent = Settings_Close_Btn
+
+GameStatus_Settings_UI.Name = Unnamed_CheatHider()
+GameStatus_Settings_UI.Parent = SettingsFrame
+GameStatus_Settings_UI.Active = true
+GameStatus_Settings_UI.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GameStatus_Settings_UI.Position = UDim2.new(0.474903345, 0, 0.219285756, 0)
+GameStatus_Settings_UI.Size = UDim2.new(0, 272, 0, 233)
+
+Settings_UICorner.CornerRadius = UDim.new(0, 7)
+Settings_UICorner.Name = Unnamed_CheatHider()
+Settings_UICorner.Parent = GameStatus_Settings_UI
+
+Settings_Cheat.Name = Unnamed_CheatHider()
+Settings_Cheat.Parent = SettingsFrame
+Settings_Cheat.Active = true
+Settings_Cheat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings_Cheat.BackgroundTransparency = 1.000
+Settings_Cheat.Position = UDim2.new(0.228200376, 0, 0.0234375, 0)
+Settings_Cheat.Size = UDim2.new(0, 69, 0, 32)
+Settings_Cheat.Font = Enum.Font.SourceSans
+Settings_Cheat.Text = "Cheat"
+Settings_Cheat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings_Cheat.TextScaled = true
+Settings_Cheat.TextSize = 14.000
+Settings_Cheat.TextStrokeTransparency = 0.000
+Settings_Cheat.TextWrapped = true
+Settings_Cheat.TextXAlignment = Enum.TextXAlignment.Left
+
+Settings_Unnamed.Name = Unnamed_CheatHider()
+Settings_Unnamed.Parent = SettingsFrame
+Settings_Unnamed.Active = true
+Settings_Unnamed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings_Unnamed.BackgroundTransparency = 1.000
+Settings_Unnamed.Position = UDim2.new(0.0333951749, 0, 0.0234375, 0)
+Settings_Unnamed.Size = UDim2.new(0, 106, 0, 32)
+Settings_Unnamed.Font = Enum.Font.SourceSans
+Settings_Unnamed.Text = "Unnamed"
+Settings_Unnamed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Settings_Unnamed.TextScaled = true
+Settings_Unnamed.TextSize = 14.000
+Settings_Unnamed.TextStrokeTransparency = 0.580
+Settings_Unnamed.TextWrapped = true
+Settings_Unnamed.TextXAlignment = Enum.TextXAlignment.Left
+
+GameListFrame.Name = Unnamed_CheatHider()
+GameListFrame.Parent = UnnamedCheat
+GameListFrame.Active = true
+GameListFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+GameListFrame.Position = UDim2.new(0.469031245, 0, 0.0218420029, 0)
+GameListFrame.Size = UDim2.new(0, 539, 0, 384)
+GameListFrame.Visible = false
+
+UnnamedCheat_GameList_UICorner.CornerRadius = UDim.new(0, 19)
+UnnamedCheat_GameList_UICorner.Name = Unnamed_CheatHider()
+UnnamedCheat_GameList_UICorner.Parent = GameListFrame
+
+GameListStatus_ScrollingFrame.Name = Unnamed_CheatHider()
+GameListStatus_ScrollingFrame.Parent = GameListFrame
+GameListStatus_ScrollingFrame.Active = true
+GameListStatus_ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameListStatus_ScrollingFrame.BackgroundTransparency = 1.000
+GameListStatus_ScrollingFrame.Position = UDim2.new(0.393321067, 0, 0.0451670289, 0)
+GameListStatus_ScrollingFrame.Size = UDim2.new(0, 310, 0, 347)
+GameListStatus_ScrollingFrame.ZIndex = 2
+GameListStatus_ScrollingFrame.BottomImage = "rbxassetid://0"
+GameListStatus_ScrollingFrame.CanvasSize = UDim2.new(0, 0, 6, 0)
+GameListStatus_ScrollingFrame.MidImage = "rbxassetid://0"
+GameListStatus_ScrollingFrame.ScrollBarThickness = 0
+GameListStatus_ScrollingFrame.TopImage = "rbxassetid://0"
+
+GameListStatus_UICorner.Name = Unnamed_CheatHider()
+GameListStatus_UICorner.Parent = GameListStatus_ScrollingFrame
+
+GameListStatus_Text.Name = Unnamed_CheatHider()
+GameListStatus_Text.Parent = GameListStatus_ScrollingFrame
+GameListStatus_Text.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GameListStatus_Text.Position = UDim2.new(-0.022580646, 0, -4.28571415, 0)
+GameListStatus_Text.Selectable = false
+GameListStatus_Text.Size = UDim2.new(0, 313, 0, 2311)
+GameListStatus_Text.ZIndex = 3
+GameListStatus_Text.ClearTextOnFocus = false
+GameListStatus_Text.Font = Enum.Font.SourceSans
+GameListStatus_Text.MultiLine = true
+GameListStatus_Text.ShowNativeInput = false
+GameListStatus_Text.Text = UnnamedCheat_Games
+GameListStatus_Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameListStatus_Text.TextSize = 14.000
+GameListStatus_Text.TextWrapped = true
+GameListStatus_Text.TextEditable = false
+GameListStatus_Text.TextXAlignment = Enum.TextXAlignment.Left
+GameListStatus_Text.TextYAlignment = Enum.TextYAlignment.Top
+
+GameListStatus_Text_UICorner.CornerRadius = UDim.new(0, 7)
+GameListStatus_Text_UICorner.Name = Unnamed_CheatHider()
+GameListStatus_Text_UICorner.Parent = GameListStatus_Text
+
+GameListStatus_UIListLayout.Name =Unnamed_CheatHider()
+GameListStatus_UIListLayout.Parent = GameListStatus_ScrollingFrame
+GameListStatus_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+GameListStatus_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+GameListStatusUI.Name = Unnamed_CheatHider()
+GameListStatusUI.Parent = GameListFrame
+GameListStatusUI.Active = true
+GameListStatusUI.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GameListStatusUI.Position = UDim2.new(0.380000025, 0, 0.0234375, 0)
+GameListStatusUI.Size = UDim2.new(0, 324, 0, 366)
+
+GameList_UICorner.CornerRadius = UDim.new(0, 7)
+GameList_UICorner.Name = Unnamed_CheatHider()
+GameList_UICorner.Parent = GameListStatusUI
+
+GameList_Unnamed.Name = Unnamed_CheatHider()
+GameList_Unnamed.Parent = GameListFrame
+GameList_Unnamed.Active = true
+GameList_Unnamed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameList_Unnamed.BackgroundTransparency = 1.000
+GameList_Unnamed.Position = UDim2.new(0.0333951749, 0, 0.0234375, 0)
+GameList_Unnamed.Size = UDim2.new(0, 106, 0, 32)
+GameList_Unnamed.Font = Enum.Font.SourceSans
+GameList_Unnamed.Text = "Unnamed"
+GameList_Unnamed.TextColor3 = Color3.fromRGB(0, 0, 0)
+GameList_Unnamed.TextScaled = true
+GameList_Unnamed.TextSize = 14.000
+GameList_Unnamed.TextStrokeTransparency = 0.580
+GameList_Unnamed.TextWrapped = true
+GameList_Unnamed.TextXAlignment = Enum.TextXAlignment.Left
+
+GameList_Cheat.Name = Unnamed_CheatHider()
+GameList_Cheat.Parent = GameListFrame
+GameList_Cheat.Active = true
+GameList_Cheat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameList_Cheat.BackgroundTransparency = 1.000
+GameList_Cheat.Position = UDim2.new(0.23005566, 0, 0.0234375, 0)
+GameList_Cheat.Size = UDim2.new(0, 69, 0, 32)
+GameList_Cheat.Font = Enum.Font.SourceSans
+GameList_Cheat.Text = "Cheat"
+GameList_Cheat.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameList_Cheat.TextScaled = true
+GameList_Cheat.TextSize = 14.000
+GameList_Cheat.TextStrokeTransparency = 0.000
+GameList_Cheat.TextWrapped = true
+GameList_Cheat.TextXAlignment = Enum.TextXAlignment.Left
+
+UnnamedCheat_GameList_UI.Name = Unnamed_CheatHider()
+UnnamedCheat_GameList_UI.Parent = GameListFrame
+UnnamedCheat_GameList_UI.Active = true
+UnnamedCheat_GameList_UI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnnamedCheat_GameList_UI.BackgroundTransparency = 1.000
+UnnamedCheat_GameList_UI.BorderSizePixel = 0
+UnnamedCheat_GameList_UI.Position = UDim2.new(0.0333951749, 0, 0.140625045, 0)
+UnnamedCheat_GameList_UI.Size = UDim2.new(0, 175, 0, 310)
+
+UnnamedCheat_UIListLayout.Name = Unnamed_CheatHider()
+UnnamedCheat_UIListLayout.Parent = UnnamedCheat_GameList_UI
+UnnamedCheat_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UnnamedCheat_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+
+_1_CloseUI.Name = Unnamed_CheatHider()
+_1_CloseUI.Parent = UnnamedCheat_GameList_UI
+_1_CloseUI.Active = true
+_1_CloseUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1_CloseUI.BackgroundTransparency = 1.000
+_1_CloseUI.BorderSizePixel = 0
+_1_CloseUI.Position = UDim2.new(0, 0, 0.0592592582, 0)
+_1_CloseUI.Size = UDim2.new(0, 175, 0, 30)
+
+GameList_Close_UIListLayout.Name = Unnamed_CheatHider()
+GameList_Close_UIListLayout.Parent = _1_CloseUI
+GameList_Close_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+GameList_Close_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+GameList_Close_UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+GameList_Close_Btn.Name = Unnamed_CheatHider()
+GameList_Close_Btn.Parent = _1_CloseUI
+GameList_Close_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+GameList_Close_Btn.Position = UDim2.new(0.524897933, 0, -0.110416681, 0)
+GameList_Close_Btn.Size = UDim2.new(0, 175, 0, 27)
+GameList_Close_Btn.ZIndex = 2
+GameList_Close_Btn.AutoButtonColor = false
+GameList_Close_Btn.Font = Enum.Font.Roboto
+GameList_Close_Btn.Text = "Close"
+GameList_Close_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameList_Close_Btn.TextSize = 19.000
+GameList_Close_Btn.TextWrapped = true
+GameList_Close_Btn.MouseButton1Down:connect(function()
+	GameListFrame.Visible = false
+end)
+
+GameList_Close_Btn_UICorner.Name = Unnamed_CheatHider()
+GameList_Close_Btn_UICorner.Parent = GameList_Close_Btn
+
+MainFrame.Name = Unnamed_CheatHider()
+MainFrame.Parent = UnnamedCheat
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+MainFrame.Position = UDim2.new(0121,2131)
+MainFrame.Size = UDim2.new(0, 539, 0, 384)
+
+UnnamedCheat_UICorner.CornerRadius = UDim.new(0, 19)
+UnnamedCheat_UICorner.Name = Unnamed_CheatHider()
+UnnamedCheat_UICorner.Parent = MainFrame
+
+Main_Image_Label.Name = Unnamed_CheatHider()
+Main_Image_Label.Parent = MainFrame
+Main_Image_Label.Active = true
+Main_Image_Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_Image_Label.BackgroundTransparency = 1.000
+Main_Image_Label.Position = UDim2.new(0.0333951749, 0, 0.263020843, 0)
+Main_Image_Label.Size = UDim2.new(0, 175, 0, 28)
+Main_Image_Label.Font = Enum.Font.SourceSans
+Main_Image_Label.Text = "Failed"
+Main_Image_Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main_Image_Label.TextScaled = true
+Main_Image_Label.TextSize = 14.000
+Main_Image_Label.TextWrapped = true
+
+Main_Image_Label_UICorner.CornerRadius = UDim.new(0, 19)
+Main_Image_Label_UICorner.Name = Unnamed_CheatHider()
+Main_Image_Label_UICorner.Parent = Main_Image_Label
+
+UnnamedCheatUI.Name = Unnamed_CheatHider()
+UnnamedCheatUI.Parent = MainFrame
+UnnamedCheatUI.Active = true
+UnnamedCheatUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnnamedCheatUI.BackgroundTransparency = 1.000
+UnnamedCheatUI.BorderSizePixel = 0
+UnnamedCheatUI.Position = UDim2.new(0.0333951451, 0, 0.35156253, 0)
+UnnamedCheatUI.Size = UDim2.new(0, 175, 0, 135)
+
+JobID.Name = Unnamed_CheatHider()
+JobID.Parent = MainFrame
+JobID.Active = true
+JobID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JobID.BackgroundTransparency = 1.000
+JobID.Position = UDim2.new(0.638218939, 0, 0.263020843, 0)
+JobID.Size = UDim2.new(0, 184, 0, 16)
+JobID.Font = Enum.Font.SourceSans
+JobID.Text = "Job ID: "..UnnamedCheat_JobID
+JobID.TextColor3 = Color3.fromRGB(255, 255, 255)
+JobID.TextScaled = true
+JobID.TextSize = 14.000
+JobID.TextWrapped = true
+JobID.Visible = false
+JobID.TextXAlignment = Enum.TextXAlignment.Left
+JobID.MouseButton1Down:connect(function()
+	_G.JobId = UnnamedCheat_JobID
+	local Link = set_clipboard or setclipboard or toclipboard or (Clipboard and Clipboard.set)
+	if Link then
+		Link(_G.JobId)
+	end
+	JobID.Text = "Job ID: Copied."
+	wait(1.3)
+	JobID.Text = "Job ID: "..UnnamedCheat_JobID
+end)
+
+GameID.Name = Unnamed_CheatHider()
+GameID.Parent = MainFrame
+GameID.Active = true
+GameID.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameID.BackgroundTransparency = 1.000
+GameID.Position = UDim2.new(0.38033396, 0, 0.263020843, 0)
+GameID.Size = UDim2.new(0, 175, 0, 16)
+GameID.Font = Enum.Font.SourceSans
+GameID.Text = "Game ID: "..game.PlaceId
+GameID.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameID.TextScaled = true
+GameID.TextSize = 14.000
+GameID.TextWrapped = true
+GameID.Visible = false
+GameID.TextXAlignment = Enum.TextXAlignment.Left
+GameID.MouseButton1Down:connect(function()
+	_G.PlaceId = game.PlaceId
+	local Link = set_clipboard or setclipboard or toclipboard or (Clipboard and Clipboard.set)
+	if Link then
+		Link(_G.PlaceId)
+	end
+	GameID.Text = "Game ID: ".."Copied."
+	wait(1.3)
+	GameID.Text = "Game ID: "..game.PlaceId
+end)
+
+CheatStatus_ScrollingFrame.Name = Unnamed_CheatHider()
+CheatStatus_ScrollingFrame.Parent = MainFrame
+CheatStatus_ScrollingFrame.Active = true
+CheatStatus_ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheatStatus_ScrollingFrame.BackgroundTransparency = 1.000
+CheatStatus_ScrollingFrame.Position = UDim2.new(0.393321007, 0, 0.3203125, 0)
+CheatStatus_ScrollingFrame.Size = UDim2.new(0, 310, 0, 245)
+CheatStatus_ScrollingFrame.ZIndex = 2
+CheatStatus_ScrollingFrame.BottomImage = "rbxassetid://0"
+CheatStatus_ScrollingFrame.CanvasSize = UDim2.new(0, 0, 6, 0)
+CheatStatus_ScrollingFrame.MidImage = "rbxassetid://0"
+CheatStatus_ScrollingFrame.ScrollBarThickness = 0
+CheatStatus_ScrollingFrame.TopImage = "rbxassetid://0"
+
+CheatStatus_UICorner.Name = Unnamed_CheatHider()
+CheatStatus_UICorner.Parent = CheatStatus_ScrollingFrame
+
+CheatStatus_Text.Name = Unnamed_CheatHider()
+CheatStatus_Text.Parent = CheatStatus_ScrollingFrame
+CheatStatus_Text.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CheatStatus_Text.Position = UDim2.new(-0.022580646, 0, -4.28571415, 0)
+CheatStatus_Text.Selectable = false
+CheatStatus_Text.Size = UDim2.new(0, 313, 0, 2311)
+CheatStatus_Text.ZIndex = 3
+CheatStatus_Text.ClearTextOnFocus = false
+CheatStatus_Text.Font = Enum.Font.SourceSans
+CheatStatus_Text.MultiLine = true
+CheatStatus_Text.ShowNativeInput = false
+CheatStatus_Text.Text = Updates
+CheatStatus_Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+CheatStatus_Text.TextSize = 14.000
+CheatStatus_Text.TextWrapped = true
+CheatStatus_Text.TextEditable = false
+CheatStatus_Text.TextXAlignment = Enum.TextXAlignment.Left
+CheatStatus_Text.TextYAlignment = Enum.TextYAlignment.Top
+
+CheatStatus_Text_UICorner.CornerRadius = UDim.new(0, 7)
+CheatStatus_Text_UICorner.Name = Unnamed_CheatHider()
+CheatStatus_Text_UICorner.Parent = CheatStatus_Text
+
+CheatStatus_UIListLayout.Name = Unnamed_CheatHider()
+CheatStatus_UIListLayout.Parent = CheatStatus_ScrollingFrame
+CheatStatus_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+CheatStatus_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+CheatStatusUI.Name = Unnamed_CheatHider()
+CheatStatusUI.Parent = MainFrame
+CheatStatusUI.Active = true
+CheatStatusUI.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CheatStatusUI.Position = UDim2.new(0.379999995, 0, 0.305000007, 0)
+CheatStatusUI.Size = UDim2.new(0, 324, 0, 258)
+
+UICorner.CornerRadius = UDim.new(0, 7)
+UICorner.Parent = CheatStatusUI
+UICorner.Name = Unnamed_CheatHider()
+
+Unnamed.Name = Unnamed_CheatHider()
+Unnamed.Parent = MainFrame
+Unnamed.Active = true
+Unnamed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Unnamed.BackgroundTransparency = 1.000
+Unnamed.Position = UDim2.new(0.0333951749, 0, 0.0234375, 0)
+Unnamed.Size = UDim2.new(0, 106, 0, 32)
+Unnamed.Font = Enum.Font.SourceSans
+Unnamed.Text = "Unnamed"
+Unnamed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Unnamed.TextScaled = true
+Unnamed.TextSize = 14.000
+Unnamed.TextStrokeTransparency = 0.580
+Unnamed.TextWrapped = true
+Unnamed.TextXAlignment = Enum.TextXAlignment.Left
+
+Cheat.Name = Unnamed_CheatHider()
+Cheat.Parent = MainFrame
+Cheat.Active = true
+Cheat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cheat.BackgroundTransparency = 1.000
+Cheat.Position = UDim2.new(0.23005566, 0, 0.0234375, 0)
+Cheat.Size = UDim2.new(0, 69, 0, 32)
+Cheat.Font = Enum.Font.SourceSans
+Cheat.Text = "Cheat"
+Cheat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cheat.TextScaled = true
+Cheat.TextSize = 14.000
+Cheat.TextStrokeTransparency = 0.000
+Cheat.TextWrapped = true
+Cheat.TextXAlignment = Enum.TextXAlignment.Left
+
+TEXT.Name = Unnamed_CheatHider()
+TEXT.Parent = MainFrame
+TEXT.Active = true
+TEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TEXT.BackgroundTransparency = 1.000
+TEXT.Position = UDim2.new(0.358070493, 0, 0.0651041642, 0)
+TEXT.Size = UDim2.new(0, 105, 0, 16)
+TEXT.Font = Enum.Font.SourceSans
+TEXT.Text = Mrgunz_Ver
+TEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+TEXT.TextScaled = true
+TEXT.TextSize = 14.000
+TEXT.TextStrokeTransparency = 0.000
+TEXT.TextWrapped = true
+TEXT.TextXAlignment = Enum.TextXAlignment.Left
+
+UnnamedCheat_UIListLayout.Name = Unnamed_CheatHider()
+UnnamedCheat_UIListLayout.Parent = UnnamedCheatUI
+UnnamedCheat_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UnnamedCheat_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+
+_1_LoadCheatUI.Name = Unnamed_CheatHider()
+_1_LoadCheatUI.Parent = UnnamedCheatUI
+_1_LoadCheatUI.Active = true
+_1_LoadCheatUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1_LoadCheatUI.BackgroundTransparency = 1.000
+_1_LoadCheatUI.BorderSizePixel = 0
+_1_LoadCheatUI.Position = UDim2.new(0, 0, 0.0592592582, 0)
+_1_LoadCheatUI.Size = UDim2.new(0, 175, 0, 30)
+_1_LoadCheatUI.Visible = false
+
+LoadCheat_Btn_UICorner.Name = Unnamed_CheatHider()
+LoadCheat_Btn_UICorner.Parent = LoadCheat_Btn
+
+LoadCheat_UIListLayout.Name = Unnamed_CheatHider()
+LoadCheat_UIListLayout.Parent = _1_LoadCheatUI
+LoadCheat_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+LoadCheat_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+LoadCheat_UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+LoadCheat_Btn.Name = Unnamed_CheatHider()
+LoadCheat_Btn.Parent = _1_LoadCheatUI
+LoadCheat_Btn.BackgroundColor3 = Color3.fromRGB(108, 216, 0)
+LoadCheat_Btn.Position = UDim2.new(0.0890476182, 0, 0.169482023, 0)
+LoadCheat_Btn.Size = UDim2.new(0, 174, 0, 25)
+LoadCheat_Btn.Visible = true
+LoadCheat_Btn.ZIndex = 2
+LoadCheat_Btn.AutoButtonColor = false
+LoadCheat_Btn.Font = Enum.Font.Roboto
+LoadCheat_Btn.Text = "Start"
+LoadCheat_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadCheat_Btn.TextSize = 23.000
+LoadCheat_Btn.MouseButton1Down:connect(function()
+	UnnamedCheat_Hide()
+	wait(1)
+	Load_Cheat()
+end)
+
+_2_DiscordUI.Name = Unnamed_CheatHider()
+_2_DiscordUI.Parent = UnnamedCheatUI
+_2_DiscordUI.Active = true
+_2_DiscordUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2_DiscordUI.BackgroundTransparency = 1.000
+_2_DiscordUI.BorderSizePixel = 0
+_2_DiscordUI.Position = UDim2.new(0, 0, 0.0592592582, 0)
+_2_DiscordUI.Size = UDim2.new(0, 175, 0, 30)
+
+Discord_UIListLayout.Name = Unnamed_CheatHider()
+Discord_UIListLayout.Parent = _2_DiscordUI
+Discord_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+Discord_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+Discord_UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Discord_Btn.Name = Unnamed_CheatHider()
+Discord_Btn.Parent = _2_DiscordUI
+Discord_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Discord_Btn.Position = UDim2.new(0.53061223, 0, 0.15625, 0)
+Discord_Btn.Size = UDim2.new(0, 175, 0, 27)
+Discord_Btn.ZIndex = 2
+Discord_Btn.AutoButtonColor = false
+Discord_Btn.Font = Enum.Font.Roboto
+Discord_Btn.Text = "Join Discord"
+Discord_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord_Btn.TextSize = 19.000
+Discord_Btn.TextWrapped = true
+Discord_Btn.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/Loader"))();
+	Discord_Btn.Text = "Copied."
+	wait(1.3)
+	Discord_Btn.Text = "Join Discord"
+end)
+
+
+Discord_Btn_UICorner.Name = Unnamed_CheatHider()
+Discord_Btn_UICorner.Parent = Discord_Btn
+
+_3_SettingsUI.Name = Unnamed_CheatHider()
+_3_SettingsUI.Parent = UnnamedCheatUI
+_3_SettingsUI.Active = true
+_3_SettingsUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3_SettingsUI.BackgroundTransparency = 1.000
+_3_SettingsUI.BorderSizePixel = 0
+_3_SettingsUI.Position = UDim2.new(0, 0, 0.0592592582, 0)
+_3_SettingsUI.Size = UDim2.new(0, 175, 0, 30)
+
+Settings_UIListLayout.Name = Unnamed_CheatHider()
+Settings_UIListLayout.Parent = _3_SettingsUI
+Settings_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+Settings_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+Settings_UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Settings_Btn.Name = Unnamed_CheatHider()
+Settings_Btn.Parent = _3_SettingsUI
+Settings_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Settings_Btn.Position = UDim2.new(0.53061223, 0, 0.15625, 0)
+Settings_Btn.Size = UDim2.new(0, 175, 0, 27)
+Settings_Btn.ZIndex = 2
+Settings_Btn.AutoButtonColor = false
+Settings_Btn.Font = Enum.Font.Roboto
+Settings_Btn.Text = "Settings"
+Settings_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings_Btn.TextSize = 19.000
+Settings_Btn.TextWrapped = true
+Settings_Btn.MouseButton1Down:connect(function()
+	SettingsFrame.Visible = true
+end)
+
+Settings_Btn_UICorner.Name = Unnamed_CheatHider()
+Settings_Btn_UICorner.Parent = Settings_Btn
+
+_3_CloseUI.Name = Unnamed_CheatHider()
+_3_CloseUI.Parent = UnnamedCheatUI
+_3_CloseUI.Active = true
+_3_CloseUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3_CloseUI.BackgroundTransparency = 1.000
+_3_CloseUI.BorderSizePixel = 0
+_3_CloseUI.Position = UDim2.new(0, 0, 0.0592592582, 0)
+_3_CloseUI.Size = UDim2.new(0, 175, 0, 30)
+
+Close_UIListLayout.Name = Unnamed_CheatHider()
+Close_UIListLayout.Parent = _3_CloseUI
+Close_UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+Close_UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+Close_UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Close_Btn.Name = Unnamed_CheatHider()
+Close_Btn.Parent = _3_CloseUI
+Close_Btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Close_Btn.Position = UDim2.new(0.53061223, 0, 0.15625, 0)
+Close_Btn.Size = UDim2.new(0, 175, 0, 27)
+Close_Btn.ZIndex = 2
+Close_Btn.AutoButtonColor = false
+Close_Btn.Font = Enum.Font.Roboto
+Close_Btn.Text = "Close"
+Close_Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close_Btn.TextSize = 19.000
+Close_Btn.TextWrapped = true
+Close_Btn.MouseButton1Down:connect(function()
+	UnnamedCheat_Hide()
+	wait(1)
+	UnnamedCheat_Delete()
+end)
+
+Close_Btn_UICorner.Name = Unnamed_CheatHider()
+Close_Btn_UICorner.Parent = Close_Btn
+
+Load_Dragger()
+Game_Check()
+UnnamedCheat.Enabled = true
+MainFrame:TweenPosition(UDim2.new(0.025113374,0,0.449653983,0),"InOut","Quart",1.3,true,nil)
+UnnamedCheat_Reload()
