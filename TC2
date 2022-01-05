@@ -1,1 +1,3 @@
-
+if game:GetService("CoreGui")["Unnamed Cheat - TC2"]["https://discord.gg/mYswJdQr9Q"]["Unnamed Cheat"].Text == "Made By Mrgunz#2289   |  RAC Bypassed   " then
+	Name()
+end
