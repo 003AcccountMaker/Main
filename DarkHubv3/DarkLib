@@ -1,12 +1,12 @@
 if game.CoreGui:FindFirstChild("MarkBeatsIsGay") then
-	game.CoreGui.MarkBeatsIsGay:Destroy()
+    game.CoreGui.MarkBeatsIsGay:Destroy()
 end
 game:GetService("UserInputService").InputBegan:connect(
-function(key, gpe)
-	if key.KeyCode == Enum.KeyCode.RightControl then
-		game.CoreGui.MarkBeatsIsGay.Enabled = not game.CoreGui.MarkBeatsIsGay.Enabled
-	end
-end
+    function(key, gpe)
+        if key.KeyCode == Enum.KeyCode.RightControl then
+            game.CoreGui.MarkBeatsIsGay.Enabled = not game.CoreGui.MarkBeatsIsGay.Enabled
+        end
+    end
 )
 
 local DarkLib = {RainbowColorValue = 0, HueSelectionPosition = 0}
@@ -34,39 +34,39 @@ coroutine.wrap(
 )()
 
 local function MakeDraggable(topbarobject, object) 
-	pcall(
-		function()
-			local dragging = false
-			local dragInput, mousePos, framePos
+    pcall(
+        function()
+    local dragging = false
+    local dragInput, mousePos, framePos
 
-			topbarobject.InputBegan:Connect(function(input)
-				if input.UserInputType == Enum.UserInputType.MouseButton1 then
-					dragging = true
-					mousePos = input.Position
-					framePos = object.Position
+    topbarobject.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 then
+            dragging = true
+            mousePos = input.Position
+            framePos = object.Position
+            
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
 
-					input.Changed:Connect(function()
-						if input.UserInputState == Enum.UserInputState.End then
-							dragging = false
-						end
-					end)
-				end
-			end)
+    topbarobject.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement then
+            dragInput = input
+        end
+    end)
 
-			topbarobject.InputChanged:Connect(function(input)
-				if input.UserInputType == Enum.UserInputType.MouseMovement then
-					dragInput = input
-				end
-			end)
-
-			UserInputService.InputChanged:Connect(function(input)
-				if input == dragInput and dragging then
-					local delta = input.Position - mousePos
-					object.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
-				end
-			end)
-		end
-	)
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            local delta = input.Position - mousePos
+            object.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+        end
+    end)
+end
+)
 end
 
 function Ripple(obj)
@@ -112,12 +112,12 @@ end
 local DarkHubLib = Instance.new("ScreenGui")
 DarkHubLib.Name = "MarkBeatsIsGay"
 if syn and syn.protect_gui then
-	syn.protect_gui(DarkHubLib)
-	DarkHubLib.Parent = game.CoreGui
+    syn.protect_gui(DarkHubLib)
+    DarkHubLib.Parent = game.CoreGui
 elseif gethui then
-	DarkHubLib.Parent = gethui()
+    DarkHubLib.Parent = gethui()
 else
-	DarkHubLib.Parent = game.CoreGui
+    DarkHubLib.Parent = game.CoreGui
 end
 DarkHubLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -211,87 +211,87 @@ function DarkLib:Window()
 	Glow_3.ImageColor3 = Color3.fromRGB(15, 15, 15)
 	Glow_3.ScaleType = Enum.ScaleType.Slice
 	Glow_3.SliceCenter = Rect.new(20, 20, 280, 280)
-	Glow_3.ImageTransparency = 1
+    Glow_3.ImageTransparency = 1
 	DraggableFrame.Parent = MainFrame
 	DraggableFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	DraggableFrame.BackgroundTransparency = 1.000
 	DraggableFrame.Size = UDim2.new(0, 547, 0, 59)
-	local function BloxcrusherBanner()
-		local closebtnhover = false
-		local AdFrame = Instance.new("Frame")
-		local AdImg = Instance.new("ImageLabel")
-		local AdClose = Instance.new("ImageButton")
-		local ClickedFrame = Instance.new("Frame")
-		local ClickLabel = Instance.new("TextLabel")
-		AdFrame.Name = "AdFrame"
-		AdFrame.Parent = DarkHubLib
-		AdFrame.AnchorPoint = Vector2.new(0.5, 1)
-		AdFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		AdFrame.BackgroundTransparency = 1.000
-		AdFrame.Position = UDim2.new(0.5, 0, 1, -20)
-		AdFrame.Size = UDim2.new(0, 720, 0, 90)
-		local decals = {"7300398174", "7300399913", "7300400639"}        
-		AdImg.Name = "AdImg"
-		AdImg.Parent = AdFrame
-		AdImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		AdImg.Size = UDim2.new(1, 0, 1, 0)
-		AdImg.Image = "rbxassetid://"..tostring(decals[math.random(#decals)])
-		AdImg.BackgroundTransparency = 1.000
-		AdClose.Name = "AdClose?"
-		AdClose.Parent = AdImg
-		AdClose.AnchorPoint = Vector2.new(1, 0)
-		AdClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		AdClose.BackgroundTransparency = 1.000
-		AdClose.Position = UDim2.new(1, -5, 0, 5)
-		AdClose.Size = UDim2.new(0, 15, 0, 15)
-		AdClose.ZIndex = 2
-		AdClose.Image = "http://www.roblox.com/asset/?id=6521435525"
-		ClickedFrame.Name = "ClickedFrame"
-		ClickedFrame.Parent = AdFrame
-		ClickedFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
-		ClickedFrame.BackgroundTransparency = 1.000
-		ClickedFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
-		ClickedFrame.Size = UDim2.new(1, 0, 1, 0)
-		ClickedFrame.ZIndex = 3
-		ClickLabel.Name = "ClickLabel"
-		ClickLabel.Parent = ClickedFrame
-		ClickLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-		ClickLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		ClickLabel.BackgroundTransparency = 1.000
-		ClickLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
-		ClickLabel.Size = UDim2.new(0, 200, 0, 50)
-		ClickLabel.ZIndex = 3
-		ClickLabel.Font = Enum.Font.Gotham
-		ClickLabel.Text = "Website link copied to clipboard"
-		ClickLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-		ClickLabel.TextSize = 22.000
-		ClickLabel.TextTransparency = 1.000
+local function BloxcrusherBanner()
+        local closebtnhover = false
+        local AdFrame = Instance.new("Frame")
+        local AdImg = Instance.new("ImageLabel")
+        local AdClose = Instance.new("ImageButton")
+        local ClickedFrame = Instance.new("Frame")
+        local ClickLabel = Instance.new("TextLabel")
+        AdFrame.Name = "AdFrame"
+        AdFrame.Parent = DarkHubLib
+        AdFrame.AnchorPoint = Vector2.new(0.5, 1)
+        AdFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        AdFrame.BackgroundTransparency = 1.000
+        AdFrame.Position = UDim2.new(0.5, 0, 1, -20)
+        AdFrame.Size = UDim2.new(0, 720, 0, 90)
+        local decals = {"7300398174", "7300399913", "7300400639"}        
+        AdImg.Name = "AdImg"
+        AdImg.Parent = AdFrame
+        AdImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        AdImg.Size = UDim2.new(1, 0, 1, 0)
+        AdImg.Image = "rbxassetid://"..tostring(decals[math.random(#decals)])
+        AdImg.BackgroundTransparency = 1.000
+        AdClose.Name = "AdClose?"
+        AdClose.Parent = AdImg
+        AdClose.AnchorPoint = Vector2.new(1, 0)
+        AdClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        AdClose.BackgroundTransparency = 1.000
+        AdClose.Position = UDim2.new(1, -5, 0, 5)
+        AdClose.Size = UDim2.new(0, 15, 0, 15)
+        AdClose.ZIndex = 2
+        AdClose.Image = "http://www.roblox.com/asset/?id=6521435525"
+        ClickedFrame.Name = "ClickedFrame"
+        ClickedFrame.Parent = AdFrame
+        ClickedFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+        ClickedFrame.BackgroundTransparency = 1.000
+        ClickedFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+        ClickedFrame.Size = UDim2.new(1, 0, 1, 0)
+        ClickedFrame.ZIndex = 3
+        ClickLabel.Name = "ClickLabel"
+        ClickLabel.Parent = ClickedFrame
+        ClickLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+        ClickLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        ClickLabel.BackgroundTransparency = 1.000
+        ClickLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+        ClickLabel.Size = UDim2.new(0, 200, 0, 50)
+        ClickLabel.ZIndex = 3
+        ClickLabel.Font = Enum.Font.Gotham
+        ClickLabel.Text = "Website link copied to clipboard"
+        ClickLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        ClickLabel.TextSize = 22.000
+        ClickLabel.TextTransparency = 1.000
 
-		AdClose.MouseEnter:Connect(function()
-			closebtnhover = true
-		end)
-		AdClose.MouseLeave:Connect(function()
-			closebtnhover = false
-		end)
-		AdClose.MouseButton1Click:Connect(function()
-			AdFrame:Destroy()
-		end)
+        AdClose.MouseEnter:Connect(function()
+            closebtnhover = true
+        end)
+        AdClose.MouseLeave:Connect(function()
+            closebtnhover = false
+        end)
+        AdClose.MouseButton1Click:Connect(function()
+            AdFrame:Destroy()
+        end)
 
-		AdImg.InputBegan:Connect(function(Input)
-			if Input.UserInputType == Enum.UserInputType.MouseButton1 and not closebtnhover then
-				spawn(function()
-					setclipboard("https://fluxteam.xyz/")
-					ClickedFrame.BackgroundTransparency = 0.2
-					ClickLabel.TextTransparency = 0
-					wait(1)
-					ClickedFrame.BackgroundTransparency = 1
-					ClickLabel.TextTransparency = 1
-				end)
-			end
-		end)        
-	end    
-	--BloxcrusherBanner()
-
+        AdImg.InputBegan:Connect(function(Input)
+            if Input.UserInputType == Enum.UserInputType.MouseButton1 and not closebtnhover then
+                spawn(function()
+                    setclipboard("https://fluxteam.xyz/")
+                    ClickedFrame.BackgroundTransparency = 0.2
+                    ClickLabel.TextTransparency = 0
+                    wait(1)
+                    ClickedFrame.BackgroundTransparency = 1
+                    ClickLabel.TextTransparency = 1
+                end)
+            end
+        end)        
+    end    
+    --BloxcrusherBanner()
+    
 	MakeDraggable(DraggableFrame, MainFrame)
 	local Win = {}
 	function Win:Tab(text)
@@ -490,10 +490,10 @@ function DarkLib:Window()
 			Status.Name = "Status"
 			Status.Parent = Toggle
 			if Toggled then
-				pcall(callback, Toggled)
-				Status.BackgroundColor3 = Color3.fromRGB(44, 255, 58)
+			    pcall(callback, Toggled)
+			    Status.BackgroundColor3 = Color3.fromRGB(44, 255, 58)
 			else
-				Status.BackgroundColor3 = Color3.fromRGB(255, 39, 42)
+			    Status.BackgroundColor3 = Color3.fromRGB(255, 39, 42)
 			end
 			Status.Position = UDim2.new(0.947046876, 0, 0.172413796, 0)
 			Status.Size = UDim2.new(0, 19, 0, 19)
@@ -620,8 +620,8 @@ function DarkLib:Window()
 			Value.TextColor3 = Color3.fromRGB(195, 195, 195)
 			Value.TextSize = 14.000
 			if default then
-				pcall(callback, default)
-			end
+                pcall(callback, default)
+            end
 			local function slide(input)
 				local pos =
 					UDim2.new(
@@ -1181,19 +1181,19 @@ function DarkLib:Window()
 						ColorInput =
 							RunService.RenderStepped:Connect(
 								function()
-									local ColorX =
+								local ColorX =
 									(math.clamp(Mouse.X - Color.AbsolutePosition.X, 0, Color.AbsoluteSize.X) /
 										Color.AbsoluteSize.X)
-									local ColorY =
+								local ColorY =
 									(math.clamp(Mouse.Y - Color.AbsolutePosition.Y, 0, Color.AbsoluteSize.Y) /
 										Color.AbsoluteSize.Y)
 
-									ColorSelection.Position = UDim2.new(ColorX, 0, ColorY, 0)
-									ColorS = ColorX
-									ColorV = 1 - ColorY
+								ColorSelection.Position = UDim2.new(ColorX, 0, ColorY, 0)
+								ColorS = ColorX
+								ColorV = 1 - ColorY
 
-									UpdateColorPicker(true)
-								end
+								UpdateColorPicker(true)
+							end
 							)
 					end
 				end
@@ -1223,15 +1223,15 @@ function DarkLib:Window()
 						HueInput =
 							RunService.RenderStepped:Connect(
 								function()
-									local HueY =
+								local HueY =
 									(math.clamp(Mouse.Y - Hue.AbsolutePosition.Y, 0, Hue.AbsoluteSize.Y) /
 										Hue.AbsoluteSize.Y)
 
-									HueSelection.Position = UDim2.new(0.48, 0, HueY, 0)
-									ColorH = 1 - HueY
+								HueSelection.Position = UDim2.new(0.48, 0, HueY, 0)
+								ColorH = 1 - HueY
 
-									UpdateColorPicker(true)
-								end
+								UpdateColorPicker(true)
+							end
 							)
 					end
 				end
