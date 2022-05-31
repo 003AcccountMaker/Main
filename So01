@@ -1,0 +1,234 @@
+getgenv().UnnamedCheat_GameName = "GameName"
+getgenv().UnnamedCheat_GameID = "GameID"
+getgenv().UnnamedCheat_CheatName = "UnnamedCheat - "..getgenv().UnnamedCheat_GameName
+
+if isfolder and makefolder and not isfolder("Unnamed Cheat/Configs/"..getgenv().UnnamedCheat_GameID) then
+	makefolder("Unnamed Cheat/Configs/"..getgenv().UnnamedCheat_GameID)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Unnamed Cheat";
+		Text = "F2 Hide/Show";
+		Button1 = "Ok";
+		Duration = 60;
+	})
+end
+
+local UnnamedCheat_Lib = {}
+
+local UnnamedCheat_Gui = Instance.new("ScreenGui")
+
+syn.protect_gui(UnnamedCheat_Gui)
+UnnamedCheat_Gui.Name = getgenv().UnnamedCheat_CheatName
+UnnamedCheat_Gui.DisplayOrder = math.random(100,1000)
+UnnamedCheat_Gui.Enabled = true
+UnnamedCheat_Gui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+UnnamedCheat_Gui.Parent = game:GetService("CoreGui")
+game:GetService("UserInputService").InputBegan:connect(function(input, gameProcessed)
+	if input.KeyCode == Enum.KeyCode.F2 or input.KeyCode == Enum.KeyCode.RightShift then
+		if not gameProcessed then
+			UnnamedCheat_Gui.Enabled = not UnnamedCheat_Gui.Enabled
+		end
+	end
+end)
+
+function UnnamedCheat_Lib:Window()
+	local Screen = Instance.new("Frame")
+	local TabList = Instance.new("Frame")
+	local TabListUICorner = Instance.new("UICorner")
+	local TabListUIListLayout = Instance.new("UIListLayout")
+	local NameTabButtonUI = Instance.new("Frame")
+	local NameTabButton = Instance.new("TextButton")
+	local ScreenUICorner = Instance.new("UICorner")
+	local UnnamedCheatUI = Instance.new("Frame")
+	local CheatUI = Instance.new("TextLabel")
+	local UnnamedUI = Instance.new("TextLabel")
+	local Version = Instance.new("TextLabel")
+	local ScreenUIScale = Instance.new("UIScale")
+	local MiniSettings = Instance.new("Frame")
+	local MiniSettingsUIListLayout = Instance.new("UIListLayout")
+	local HideMenuButton = Instance.new("TextButton")
+	local DeleteMenuButton = Instance.new("TextButton")
+	local InfoFrame = Instance.new("Frame")
+	local InfoFrameCorner = Instance.new("UICorner")
+	local InfoFrameText = Instance.new("TextBox")
+
+	Screen.Name = "Screen"
+	Screen.Parent = UnnamedCheat_Gui
+	Screen.Active = true
+	Screen.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	Screen.BorderSizePixel = 0
+	Screen.Position = UDim2.new(0.0327103846, 0, 0.460404664, 0)
+	Screen.Size = UDim2.new(0, 630, 0, 420)
+	Screen.Transparency = 0
+	Screen.Draggable = true
+	Screen.Visible = true
+
+	TabList.Name = "Tab List"
+	TabList.Parent = Screen
+	TabList.Active = true
+	TabList.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	TabList.BorderSizePixel = 0
+	TabList.Position = UDim2.new(0.0190476198, 0, 0.119047619, 0)
+	TabList.Size = UDim2.new(0, 130, 0, 363)
+
+	TabListUICorner.CornerRadius = UDim.new(0, 4)
+	TabListUICorner.Name = "Tab List UI Corner"
+	TabListUICorner.Parent = TabList
+
+	TabListUIListLayout.Name = "Tab List UI List Layout"
+	TabListUIListLayout.Parent = TabList
+	TabListUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+	NameTabButtonUI.Name = "Name Tab Button UI"
+	NameTabButtonUI.Parent = TabList
+	NameTabButtonUI.Active = true
+	NameTabButtonUI.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	NameTabButtonUI.BorderSizePixel = 0
+	NameTabButtonUI.Size = UDim2.new(0, 130, 0, 22)
+
+	NameTabButton.Name = "Name Tab Button"
+	NameTabButton.Parent = NameTabButtonUI
+	NameTabButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	NameTabButton.BorderSizePixel = 0
+	NameTabButton.Size = UDim2.new(0, 130, 0, 22)
+	NameTabButton.AutoButtonColor = false
+	NameTabButton.Font = Enum.Font.Gotham
+	NameTabButton.Text = " Unnamed Cheat Test"
+	NameTabButton.TextColor3 = Color3.fromRGB(127, 127, 127)
+	NameTabButton.TextSize = 12.000
+	NameTabButton.TextWrapped = true
+	NameTabButton.TextXAlignment = Enum.TextXAlignment.Left
+
+	ScreenUICorner.CornerRadius = UDim.new(0, 4)
+	ScreenUICorner.Name = "Screen UI Corner"
+	ScreenUICorner.Parent = Screen
+
+	UnnamedCheatUI.Name = "Unnamed Cheat UI"
+	UnnamedCheatUI.Parent = Screen
+	UnnamedCheatUI.Active = true
+	UnnamedCheatUI.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+	UnnamedCheatUI.BackgroundTransparency = 1.000
+	UnnamedCheatUI.BorderSizePixel = 0
+	UnnamedCheatUI.Position = UDim2.new(0.0121670077, 0, 0.0140103688, 0)
+	UnnamedCheatUI.Size = UDim2.new(0, 194, 0, 36)
+
+	CheatUI.Name = "Cheat UI"
+	CheatUI.Parent = UnnamedCheatUI
+	CheatUI.Active = true
+	CheatUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	CheatUI.BackgroundTransparency = 1.000
+	CheatUI.Position = UDim2.new(0.575050294, 0, 0.0234374981, 0)
+	CheatUI.Size = UDim2.new(0, 69, 0, 32)
+	CheatUI.Font = Enum.Font.SourceSans
+	CheatUI.Text = "Cheat"
+	CheatUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+	CheatUI.TextScaled = true
+	CheatUI.TextSize = 14.000
+	CheatUI.TextStrokeTransparency = 0.000
+	CheatUI.TextWrapped = true
+	CheatUI.TextXAlignment = Enum.TextXAlignment.Left
+
+	UnnamedUI.Name = "Unnamed UI"
+	UnnamedUI.Parent = UnnamedCheatUI
+	UnnamedUI.Active = true
+	UnnamedUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	UnnamedUI.BackgroundTransparency = 1.000
+	UnnamedUI.Position = UDim2.new(0.0333951749, 0, 0.0234375, 0)
+	UnnamedUI.Size = UDim2.new(0, 106, 0, 32)
+	UnnamedUI.Font = Enum.Font.SourceSans
+	UnnamedUI.Text = "Unnamed"
+	UnnamedUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+	UnnamedUI.TextScaled = true
+	UnnamedUI.TextSize = 14.000
+	UnnamedUI.TextStrokeTransparency = 0.580
+	UnnamedUI.TextWrapped = true
+	UnnamedUI.TextXAlignment = Enum.TextXAlignment.Left
+
+	Version.Name = "Version"
+	Version.Parent = Screen
+	Version.Active = true
+	Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Version.BackgroundTransparency = 1.000
+	Version.Position = UDim2.new(0.297732413, 0, 0.05250936, 0)
+	Version.Size = UDim2.new(0, 105, 0, 16)
+	Version.Font = Enum.Font.SourceSans
+	Version.Text = "12.0" --cbx
+	Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Version.TextScaled = true
+	Version.TextSize = 14.000
+	Version.TextStrokeTransparency = 0.000
+	Version.TextWrapped = true
+	Version.TextXAlignment = Enum.TextXAlignment.Left
+
+	ScreenUIScale.Name = "Screen UI Scale"
+	ScreenUIScale.Parent = Screen
+
+	MiniSettings.Name = "Mini Settings"
+	MiniSettings.Parent = Screen
+	MiniSettings.Active = true
+	MiniSettings.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	MiniSettings.BackgroundTransparency = 1.000
+	MiniSettings.BorderSizePixel = 0
+	MiniSettings.Position = UDim2.new(0.793650746, 0, 0, 0)
+	MiniSettings.Size = UDim2.new(0, 130, 0, 22)
+
+	MiniSettingsUIListLayout.Name = "Mini Settings UI List Layout"
+	MiniSettingsUIListLayout.Parent = MiniSettings
+	MiniSettingsUIListLayout.FillDirection = Enum.FillDirection.Horizontal
+	MiniSettingsUIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
+	MiniSettingsUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	MiniSettingsUIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+	HideMenuButton.Name = "Hide Menu Button"
+	HideMenuButton.Parent = MiniSettings
+	HideMenuButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	HideMenuButton.BackgroundTransparency = 1.000
+	HideMenuButton.BorderSizePixel = 0
+	HideMenuButton.Position = UDim2.new(0.800000012, 0, 0, 0)
+	HideMenuButton.Size = UDim2.new(0, 19, 0, 22)
+	HideMenuButton.AutoButtonColor = false
+	HideMenuButton.Font = Enum.Font.Gotham
+	HideMenuButton.Text = "_"
+	HideMenuButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	HideMenuButton.TextSize = 12.000
+
+	DeleteMenuButton.Name = "Delete Menu Button"
+	DeleteMenuButton.Parent = MiniSettings
+	DeleteMenuButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	DeleteMenuButton.BackgroundTransparency = 1.000
+	DeleteMenuButton.BorderSizePixel = 0
+	DeleteMenuButton.Position = UDim2.new(0.800000012, 0, 0, 0)
+	DeleteMenuButton.Size = UDim2.new(0, 19, 0, 22)
+	DeleteMenuButton.AutoButtonColor = false
+	DeleteMenuButton.Font = Enum.Font.Gotham
+	DeleteMenuButton.Text = "X"
+	DeleteMenuButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	DeleteMenuButton.TextSize = 12.000
+
+	InfoFrame.Name = "Info Frame"
+	InfoFrame.Parent = Screen
+	InfoFrame.Active = true
+	InfoFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	InfoFrame.BorderSizePixel = 0
+	InfoFrame.Position = UDim2.new(1.01002097, 0, -0.00188538432, 0)
+	InfoFrame.Size = UDim2.new(0, 334, 0, 245)
+	InfoFrame.Visible = false
+
+	InfoFrameCorner.CornerRadius = UDim.new(0, 4)
+	InfoFrameCorner.Name = "Info Frame Corner"
+	InfoFrameCorner.Parent = InfoFrame
+
+	InfoFrameText.Name = "Info Frame Text"
+	InfoFrameText.Parent = InfoFrame
+	InfoFrameText.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	InfoFrameText.BackgroundTransparency = 1.000
+	InfoFrameText.BorderSizePixel = 0
+	InfoFrameText.Position = UDim2.new(0.0164049342, 0, 0.047869876, 0)
+	InfoFrameText.Size = UDim2.new(0, 323, 0, 226)
+	InfoFrameText.ClearTextOnFocus = false
+	InfoFrameText.Font = Enum.Font.SourceSans
+	InfoFrameText.Text = "Unnamed Cheat Test"
+	InfoFrameText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	InfoFrameText.TextSize = 14.000
+	InfoFrameText.TextXAlignment = Enum.TextXAlignment.Left
+	InfoFrameText.TextYAlignment = Enum.TextYAlignment.Top
+end
