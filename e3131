@@ -1344,7 +1344,10 @@ function UnnamedCheat_Lib:Window()
 					NameTabFrame2Button.TextColor3 = Color3.fromRGB(255, 255, 255)
 				end)
 			end
+			return DropDown_Button_Tab_2
 		end
+		return DropDown_Tab_2
 	end
+	return Tabs
 end
 return UnnamedCheat_Lib
