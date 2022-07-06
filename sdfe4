@@ -1,7 +1,7 @@
---- ewkqne
+-- 1
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/UnnamedCheat/main/Version"))();
 loadstring(game:HttpGet("https://raw.githubusercontent.com/"..getgenv().UnnamedCheat_Loadstring.."/UnnamedCheat/main/List"))();
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/"..getgenv().UnnamedCheat_Loadstring.."/UnnamedCheat/main/Bin/Status"))()
+--loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/"..getgenv().UnnamedCheat_Loadstring.."/UnnamedCheat/main/Bin/Status"))()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/"..getgenv().UnnamedCheat_Loadstring.."/UnnamedCheat/main/Bin/Console"))()
 function Gui()
 	local UnnamedCheat_Gui = Instance.new("ScreenGui")
